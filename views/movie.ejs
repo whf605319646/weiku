@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %> -电影</title>
+</head>
+<body>
+    <div> <%= data %> </div>
+    <form action="/likeMovie" method="post">
+        <input type="text" name="movieid" value=<%= data.movieid %>>
+        <input type="submit" value="like">
+    </form>
+
+    <form action="/dislikeMovie" method="post">
+        <input type="text" name="movieid" value=<%= data.movieid %>>
+        <input type="submit" value="dislike">
+    </form>
+    <div>
+        <ul class="pages">
+            <li class="chat page">
+                <div class="chatArea">
+                    <ul class="messages"></ul>
+                </div>
+                <input type="text" class="inputMessage" placeholder="Type here..." />
+            </li>
+        </ul>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>

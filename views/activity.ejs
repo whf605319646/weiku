@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %>-活动</title>
+</head>
+<body>
+    <div><%= activity_data %></div>
+    <form action="/participate" method="post">
+        <input type="text" name="acid" value=<%= activity_data.acid %>>
+        <input type="submit" value="参加活动">
+    </form>
+    <form action="/deleteActivity" method="post">
+        <input type="text" name="acid" value=<%= activity_data.acid %>>
+        <input type="submit" value="删除活动">
+    </form>
+</body>
+</html>

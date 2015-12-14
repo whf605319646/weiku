@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %> -评论</title>
+</head>
+<body>
+    <form action="/addComment" method="post">
+        <input type="text" name="title">
+        <input type="hidden" name="movieid" value=<%= movieid %>>
+        <br>
+        <textarea name="detail" id="" cols="30" rows="10"></textarea>
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+        <input type="submit" value="addcomment">
+    </form>
+</body>
+</html>
