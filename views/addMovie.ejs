@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <% include head %>
     <title><%= title %> -新增电影</title>
 </head>
 <body>
-    <form action="/doMovieAdd" method="post" enctype="multipart/form-data">
-        <input type="text" name="title" placeholder="输入电影名称">
-        <input type="text" name="type" placeholder="电影类型">
-        <input type="text" name="actor" placeholder="演员">
-        <input type="text" name="director" placeholder="导演">
-        <input type="number" name="duration" value="60" max="300">
-        <input type="text" name="post_src" placeholder="海报地址">
-        <input type="text" name="play_src" placeholder="播放地址">
-        <input type="file" name="movie_post">
-        <textarea name="detail" cols="30" rows="10"></textarea>
-        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
-        <input type="submit" value="submit">
-    </form>
+    <% include header %>
+    <div class="row">
+        <div class="small-9 small-centered columns">
+            <h5>新增电影</h5>
+            <form action="/doMovieAdd" method="post" enctype="multipart/form-data">
+                <input type="text" name="title" placeholder="输入电影名称">
+                <fieldset class="fieldset">
+                    <legend>选择电影类型</legend>
+                    <input id="checkbox1" type="checkbox" name="type"><label for="checkbox1">青春</label>
+                    <input id="checkbox2" type="checkbox" name="type"><label for="checkbox2">励志</label>
+                    <input id="checkbox3" type="checkbox" name="type"><label for="checkbox3">爱情</label>
+                    <input id="checkbox4" type="checkbox" name="type"><label for="checkbox4">搞笑</label>
+                    <input id="checkbox5" type="checkbox" name="type"><label for="checkbox5">创意</label>
+                    <input id="checkbox6" type="checkbox" name="type"><label for="checkbox6">人生</label>
+                    <input id="checkbox7" type="checkbox" name="type"><label for="checkbox7">广告</label>
+                </fieldset>
+                <input type="text" name="actor" placeholder="输入演员，以逗号分隔">
+                <input type="text" name="director" placeholder="输入导演，以逗号分隔">
+                <fieldset class="fieldset">
+                    <legend>电影时长(以分钟计)</legend>
+                    <div class="small-8 medium-10 columns">
+                        <div class="slider" data-slider data-initial-start="6" data-end="150">
+                            <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="duration-slider"></span>
+                            <span class="slider-fill" data-slider-fill></span>
+                        </div>
+                    </div>
+                    <div class="small-4 medium-2 columns">
+                        <input type="number" name="duration" value="6" max="150" id="duration-slider">
+                    </div>
+                </fieldset>
+                <input type="text" name="play_src" placeholder="播放地址">
+                <input type="text" name="post_src" placeholder="海报地址">
+                <fieldset class="fieldset">
+                    <legend>上传海报(可选)</legend>
+                    <input type="file" name="movie_post">
+                </fieldset>
+                <textarea name="detail" cols="30" rows="10" placeholder="输入剧情描述"></textarea>
+                <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+                <button class="button tiny">提交</button>
+            </form>
+        </div>
+    </div>
+    <% include footer %>
+    <% include script %>
 </body>
 </html>

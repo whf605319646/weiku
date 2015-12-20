@@ -1,0 +1,95 @@
+
+    <div class="title-bar" data-responsive-toggle="top-navigator" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title"><a href="/">微.酷</a></div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="top-bar" id="top-navigator">
+        <section class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text show-for-medium">
+                    <a href="/"><img src="/static/images/icon.jpg" alt="微.酷微电影分享平台"></a>
+                </li>
+                <li><a href="#">青春</a></li>
+                <li><a href="#">励志</a></li>
+                <li><a href="#">爱情</a></li>
+                <li><a href="#">搞笑</a></li>
+                <li><a href="#">创意</a></li>
+                <li><a href="#">人生</a></li>
+                <li><a href="#">广告</a></li>
+            </ul>
+        </section>
+
+        <section class="top-bar-right">
+            <ul class="menu">
+                <li class="hide-for-medium-only">
+                    <input type="search" placeholder="搜索" data-toggle="search-result">
+                </li>
+                <li><a data-toggle="login-modal">登录</a></li>
+                <li><a data-toggle="register-modal">注册</a></li>
+            </ul>
+        </section>
+    </nav>
+    <!-- 导航栏结束 -->
+
+    <!-- 搜索结果 -->
+    <div class="dropdown-pane" id="search-result" data-dropdown>
+      <div class="row">
+           <div class="columns small-4">
+               
+              <img  class="thumbnail" src="/static/images/default-poster.png" alt="搜索结果">
+           </div>
+           <div class="columns small-8">
+               
+              <h6>电影1啊啊啊啊啊</h6>
+           </div>
+      </div>
+    </div>
+    <!-- 搜索结束 -->
+    <!-- 登录框 -->
+    <div class="small reveal" id="login-modal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <h5 class="float-center">用户登录</h5>
+            <form action="#" method="post" role="form">
+                <div class="input-group">
+                    <span class="input-group-label">用户名</span>
+                    <input class="input-group-field" type="text" placeholder="请输入用户名">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">密码</span>
+                    <input class="input-group-field" type="password" placeholder="密码长度不小于6">
+                </div>
+                <button type="button" class="button float-right">登录</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 注册弹框 -->
+    <div class="medium reveal" id="register-modal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <h5 class="float-center">新用户注册</h5>
+            <form action="#" method="post" role="form">
+                <div class="input-group">
+                    <span class="input-group-label">用户名</span>
+                    <input class="input-group-field" type="text" placeholder="请设置用户名">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">密码</span>
+                    <input class="input-group-field" type="password" placeholder="密码长度不小于6">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">密码</span>
+                    <input class="input-group-field" type="password" placeholder="请再次输入密码">
+                </div>
+                <span class="float-left"><small class="subheader">已有账户?&nbsp;</small><a href="#" class="default-blue" data-toggle="login-modal">去登录</a></span>
+                <button type="button" class="button float-right">点击注册</button>
+            </form>
+        </div>
+    </div>

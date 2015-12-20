@@ -1,10 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title><%= title %></title>
+     <% include head %>
+     <title><%= title %></title>
 </head>
 <body>
-    <div><%= data %></div>
+<%- include header %>
+    <!-- 轮播幻灯,只出现在medium和large屏幕 -->
+    <div class="row orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="true">
+        <ul class="orbit-container">
+            <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">上一张</span>&#9664;</button>
+            <button class="orbit-next" aria-label="next"><span class="show-for-sr">下一张</span>&#9654;</button>
+            <li class="is-active orbit-slide">
+                <div class="slider-poster">
+                    <a href="#"><img src="http://image.jaxus.cn/adv/img-55aca13711d8c2609cc08a23-1437376920005.jpg" alt="" class="thumbnail"></a>
+                    <h5 class="text-center">第一张</h5>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="slider-poster">
+                   <a href="#"><img src="http://image.jaxus.cn/55f16f0411d8c23b315bfce4.jpg" alt="" class="thumbnail"></a>
+                   <h5 class="text-center">第二张</h5>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="slider-poster">
+                    <a href="#"><img src="http://image.jaxus.cn/55fcd7d811d8c27087a6ec7b.jpg" alt="" class="thumbnail"></a>
+                    <h5 class="text-center">第三张</h5>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="slider-poster">
+                    <a href="#"><img src="http://image.jaxus.cn/56132f0c11d8c24522b8b2b2.jpg" alt="" class="thumbnail"></a>
+                    <h5 class="text-center">第四张</h5>
+                </div>
+            </li>
+        </ul>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+    </div>
+    
+    <!-- 视频列表 -->
+    <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer>
+    <% for(var i = 0; i<data.length; i++) { %>
+        <div class="column" data-equalizer-watch>
+            <a href="#">
+                <img src="/static/images/default-poster.png" class="thumbnail" alt="电影海报">
+                <h6 class="text-center subheader"><%= data[i].title %></h6> 
+                <div class="row">
+                    <h5 class="small-8 small-offset-2 columns">
+                            <small class="subheader float-left"><i class="fi-heart"><%= data[i].like.length %></i></small>
+                            <small class="subheader float-right"><i class="fi-comments"><%= data[i].comments.length %></i></small>
+                    </h5>
+                </div>
+                <hr/>
+            </a>
+        </div>
+    <% } %>
+    </div>
+<%- include footer %>
+<% include script %>
 </body>
 </html>

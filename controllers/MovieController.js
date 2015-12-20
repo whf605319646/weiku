@@ -59,6 +59,9 @@ exports.add = function (req, res, next) {
 };
 
 exports.findMovieById = function (req, res, next) {
+    if (!/^\d+$/.test(req.params.id)) {
+        return res.status(404).send();
+    }
     Movie.findById(req.params.id, function (err, data){
         if (err) {
             log.error(err);
@@ -86,7 +89,7 @@ exports.findByUser = function (req, res, next) {
     }
 };
 
-exports.findAll = function (req, res) {
+exports.findAll = function (req, res, next) {
     Movie.findAllDesc(function (err, data){
         if (err) {
             log.error(err);

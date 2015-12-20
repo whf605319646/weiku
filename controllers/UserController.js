@@ -72,6 +72,7 @@ exports.addUser = function (req, res, next) {
                     log.error(err);
                     return next(err);
                 }
+                
                 res.redirect('/user/' + req.body.username);
             });
         });

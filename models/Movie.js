@@ -13,12 +13,13 @@ var MovieSchema = new Schema({
     director: Array,
     detail: {type: String, required: true},
     duration: {type: Number, default: 0},
-    post_src: String,
+    post_src: {type: String, default: '/static/images/default-poster.png'},
     play_src: String,
     publisher: {
         uid: String,
         name: String
     },
+    date: {type: Date, default: Date.now},
     like: Array,
     dislike: Array,
     comments: [

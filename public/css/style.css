@@ -1,8 +1,50 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.default-blue {
+  color: #2199e8;
+}
+
+.back-to-top {
+    width:50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background: url('/static/images/top.png') no-repeat;
+    cursor:pointer;
+    opacity: 0.3;
+}
+
+.default-primary {
+    color:#ff6908;
+}
+
+.avator-small {
+    width:25px;
+    height: 25px;
+}
+
+.avator-large {
+    width: 60px;
+    height: 60px;
+}
+
+.activity-list {
+    height: 350px;
+    overflow: scroll;
+}
+
+.input-bar {
+    margin-top: -80px;
+}
+.chat-bg {
+    background-color: #CDCDC1;
+ /*   opacity:0.45;
+    filter: alpha(opacity=45);*/
+}
+.chat-bg aside {
+    height: 100%;
+    min-height: 300px;
 }

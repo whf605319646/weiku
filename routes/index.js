@@ -41,16 +41,16 @@ router.get('/', movie.findAll);
 
 /*About Movies page*/
 router.get('/movie/:id', movie.findMovieById);
-router.get('/addMovie', judgeStateRedirect, csrfProtection, movie.add);
+router.get('/addmovie', judgeStateRedirect, csrfProtection, movie.add);
 router.get('/comment/:movieid', judgeStateRedirect, csrfProtection, movie.commentAdd);
 router.post('/doMovieAdd', judgeStateNoRedirect, upload.single('movie_post'), csrfProtection, movie.addOne);
-router.post('/likeMovie', judgeStateNoRedirect, movie.like);
-router.post('/dislikeMovie', judgeStateNoRedirect, movie.dislike);
-router.post('/addComment', judgeStateNoRedirect, csrfProtection, movie.addComment);
+router.post('/likemovie', judgeStateNoRedirect, movie.like);
+router.post('/dislikemovie', judgeStateNoRedirect, movie.dislike);
+router.post('/addmomment', judgeStateNoRedirect, csrfProtection, movie.addComment);
 
 /*About Activity page*/
 router.get('/activity/:id', activity.findById);
-router.get('/addActivity', judgeStateRedirect, csrfProtection, activity.add);
+router.get('/addactivity', judgeStateRedirect, csrfProtection, activity.add);
 router.post('/participate', judgeStateNoRedirect, activity.addParticipator);
 router.post('/deleteActivity', judgeStateNoRedirect, activity.deleteActivity);
 router.post('/doActivityAdd', judgeStateNoRedirect, csrfProtection, activity.addOne);

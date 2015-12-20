@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %> -用户资料</title>
+    <% include head %>
+    <title><%= userdata.nickname %> -用户资料</title>
 </head>
 <body>
-    <div><%= userdata %></div>
-    <form action="/user/authenticate/logout" method="post">
+    <% include header %>
+    <div class="row">
+        <section class="columns small-12 medium-7">
+            <h5 class="text-center">基本资料</h5>
+            <form>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="username" class="text-right"><strong>用户名:</strong></label>
+                    </div>
+                    <div class="small-9 columns">
+                      <h6 id="username"><%= userdata.username %></h6>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="small-3 columns">
+                        <label for="nickname-input" class="text-right"><strong>昵称:</strong></label>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" id="nickname-input" value="<%= userdata.nickname %>" placeholder="添加昵称">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="avator-input" class="text-right"><strong>头像:</strong><br>(<a href="javascript:void(0)" data-toggle="avator-modal">更换</a>)</label>
+                    </div>
+                    <div class="small-9 columns">
+                      <img src="/static/images/default_avator.jpg" class="avator-large" alt="头像加载失败">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-4 medium-3 columns">
+                        <label for="password" class="text-right"><strong>登录密码:</strong></label>
+                    </div>
+                    <div class="small-8 medium-9 columns">
+                      <p><a href="javascript:void(0)" data-toggle="change-psw">修改</a></p>
+                        <div class="callout" id="change-psw" data-toggler data-animate="hinge-in-from-top hinge-out-from-bottom">
+                          <input type="password" placeholder="输入新密码">
+                          <input type="password" placeholder="再次输入新密码">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-6 medium-5 small-offset-4 medium-offset-5 columns">
+                        <button class="button tiny">更新设置</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <hr>
+                <!-- 我的电影 -->
+                <h5> &nbsp; &nbsp;我的电影 &nbsp;<a href="/addmovie" class="tiny button secondary">发布</a></h5>
+                <div class="row small-up-1 medium-up-2 callout">
+                    <div class="columns">
+                        <div class="small-4 columns">
+                            <img src="/static/images/default-poster.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="small-8 columns">
+                            <span><a href="#">陪安东尼一起度过的漫长岁月</a></span>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="small-4 columns">
+                            <img src="/static/images/default-poster.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="small-8 columns">
+                            <span><a href="#">陪安东尼一起度过的漫长岁月</a></span>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="small-4 columns">
+                            <img src="/static/images/default-poster.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="small-8 columns">
+                            <span><a href="#">陪安东尼一起度过的漫长岁月</a></span>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="small-4 columns">
+                            <img src="/static/images/default-poster.png" alt="" class="thumbnail">
+                        </div>
+                        <div class="small-8 columns">
+                            <span><a href="#">陪安东尼一起度过的漫长岁月</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="columns small-12 medium-5">
+            <div class="row">
+                <!-- 我的活动 -->
+                <div class="small-8 small-centered columns callout">
+                    <h5>我的活动</h5>
+                    <div class="callout success small">
+                        <a href="/activity/130"><h6>活动一活动</h6></a>
+                        <small class="subheader">时间:&nbsp;2015/12/11</small>
+                    </div>
+                     <div class="callout success small">
+                        <a href="#"><h6>活动一</h6></a>
+                        <small class="subheader">时间:&nbsp;2015/12/11</small>
+                    </div>
+                </div>
+                <!-- 我的活动结束 -->
+            </div>
+        </section>
+    </div>
+    
+    <!-- 更换头像弹窗 -->
+     <div class="tiny reveal" id="avator-modal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <h5 class="float-center">上传头像</h5>
+            <form action="#" method="post" role="form">
+        
+                <input class="input-group-field" type="file">
+                <button type="button" class="button tiny">替换</button>
+            </form>
+        </div>
+    </div>
+    <!-- 弹窗结束 -->
+<!--     <form action="/user/authenticate/logout" method="post">
         <input type="submit" value="logout">
     </form>
     <form action="/user/rel/movie" method="get">
@@ -21,6 +142,7 @@
     <form action="/user/update/avator" method="post" role="form" enctype="multipart/form-data">
         <input type="file" name="avator">
         <input type="submit" value="uploadavator">
-    </form>
+    </form> -->
+    <% include script %>
 </body>
 </html>

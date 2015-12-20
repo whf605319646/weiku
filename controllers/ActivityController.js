@@ -19,7 +19,7 @@ exports.addOne = function (req, res, next) {
             content: xss(req.body.content),
             location: xss(req.body.location),
             contacts: xss(req.body.contacts),
-            rel_movie: xss(req.body.rel_movie),
+            rel_movie: xss(req.query.movieid),
             ptcp_num: xss(req.body.ptcp_num),
             organizer: {
                 uid: req.user.username,

@@ -37,7 +37,7 @@ app.use(passport.session());
 
 // uncomment after placing your favicon in /public
 app.use('/static',express.static(path.join(__dirname, 'public')));
-app.use(favicon(__dirname + '/public/images/icon.ico'));
+app.use(favicon(__dirname + '/public/images/icon.jpg'));
 
 app.use('/', index);
 app.use('/user', users);

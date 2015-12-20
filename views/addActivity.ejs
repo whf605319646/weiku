@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <% include head %>
     <title><%= title %>-发布活动</title>
 </head>
 <body>
-    <form action="/doActivityAdd" method="post">
-        <input type="text" name="theme" placeholder="输入活动主题">
-        <input type="text" name="date" placeholder="输入活动时间">
-        <input type="text" name="content" placeholder="详情">
-        <input type="text" name="location" placeholder="活动地点">
-        <input type="text" name="contacts" placeholder="联系方式">
-        <input type="text" name="rel_movie" placeholder="所相关的电影">
-        <input type="text" name="ptcp_num" placeholder="人数限制">
-        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
-        <input type="submit" value="submit">
-    </form>
+    <% include header %>
+    <div class="row">
+        <div class="small-8 small-centered columns callout success">
+            <h4>发布活动</h4>
+            <form action="/doActivityAdd" method="post">
+                <input type="text" name="theme" placeholder="输入活动主题">
+                <input type="date" name="date" placeholder="输入活动时间 2010/01/01">
+                <input type="text" name="content" placeholder="详情">
+                <input type="text" name="location" placeholder="活动地点">
+                <input type="text" name="contacts" placeholder="组织方联系方式">
+                <input type="number" name="ptcp_num" placeholder="人数限制">
+                <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+                <button class="button tiny">提交</button>
+            </form>
+        </div>
+    </div>
+    <% include footer %>
+    <% include script %>
 </body>
 </html>

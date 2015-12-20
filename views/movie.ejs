@@ -1,32 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %> -电影</title>
+     <% include head %>
+     <title>电影 - <%= data.title %></title>
 </head>
 <body>
-    <div> <%= data %> </div>
-    <form action="/likeMovie" method="post">
+<% include header %>
+    <div class="row">
+        <div class="media-object stack-for-small">
+            <section class="media-object-section medium-3 large-3 columns">
+                <div>
+                  <img class="thumbnail" src= "<%= data.post_src %>">
+                </div>
+            </section>
+            <section class="media-object-section medium-6 large-6 columns">
+                <h3><%= data.title %></h3>
+                <h5>
+                    <div class="small-5 columns" id="like-movie" style="cursor:pointer;">
+                        <i class="default-primary fi-like"></i> <%= data.like.length %>
+                    </div> 
+                    <div class="small-7 columns" id="dislike-movie" style="cursor:pointer;">
+                        <i class="fi-dislike"></i> <%= data.dislike.length %>
+                    </div>
+                </h5>
+                <h6><strong>导演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.director %></a></h6>
+                <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor %></a></h6>
+                <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+                <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+                <h6><strong>本站发布时间: </strong>
+                <%= data.date.getFullYear()+'/'+(data.date.getMonth()+1)+'/'+data.date.getDate()+' '+data.date.getHours()+':'+data.date.getMinutes()+':'+data.date.getSeconds() %>
+                </h6>
+                <h6><strong>原站播放:</strong> <a target="_blank" class="default-blue" href="<%= data.play_src %>">点我进入</a></h6>
+
+                <!-- JiaThis 社交分享插件 -->
+                <div class="jiathis_style">
+                    <span class="jiathis_txt">分享到：</span>
+                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                    <a class="jiathis_counter_style"></a>
+                </div>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                <!-- JiaThis Button 结束 -->
+            </section>
+
+            <section class="media-object-section medium-3 large-3 columns callout activity-list">
+                <h5 class="">相关活动</h5><a href="/addactivity?movieid=<%= data.movieid %>" class="button tiny secondary">发布活动</a>
+                <div class="callout success small"><a href="#"><h6>活动一活动</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
+                <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
+                <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
+                 <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
+            </section>
+        </div>
+    </div>
+    <hr>
+    <!-- 播放插件 -->
+    <div class="row">
+        <div class="media-object" data-equalizer>
+            <section class="flex-video widescreen media-object-section medium-9 large-9 show-for-medium columns" data-equalizer-watch>
+                <iframe src="<%= data.play_src %>" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+
+            <!-- 聊天室 -->
+             <section class="media-object-section medium-3 large-3 columns chat-bg" data-equalizer-watch>
+                <aside>
+                    <div class="chatArea">
+                        <ul class="messages">
+                        </ul>
+                    </div>
+                </aside>
+                <div class="input-group input-bar">
+                    <input type="text" class="inputMessage input-group-field" placeholder="请输入..." />
+                    <div class="input-group-button">
+                        <input type="button" class="button" value="发表">
+                    </div>
+                </div>
+            </section>
+            <!-- 聊天时结束 -->
+        </div>
+    </div>
+    <!-- 播放插件结束 -->
+
+    <!-- 剧情介绍 -->
+    <div class="row">
+        <div class="columns">
+            <h5><strong>剧情描述:</strong></h5>
+            <p><%= data.detail %></p>
+        </div>
+    </div>
+    <!-- 剧情介绍结束 -->
+
+    <!-- 影评 -->
+    <div class="row">
+        <hr>
+        <div class="columns">
+            <ul class="vertical menu" data-accordion-menu>
+                <h5><i class="fi-comments">&nbsp;</i><strong>影片点评:&nbsp;</strong><button  class="tiny secondary button" data-toggle="comment-modal">写影评<i class="fi-pencil"></i></button></h5>
+                <% for(var i = 0; i<data.comments.length; i++) { %>
+                    <li> 
+                        <a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="/static/images/default_avator.jpg" alt=""/><%= data.comments[i].content.title %></a>
+                        <h6>
+                        <a href="javascript:void(0)"><%= data.comments[i].rel_user.name %></a>
+                            <small class="subheader">
+                            &nbsp;
+                            <%= data.comments[i].date %>
+                            </small>
+                        </h6>
+                        <p><%= data.comments[i].content.detail %><span>......</span></p>
+                        <ul class="menu vertical nested">
+                            <li><%= data.comments[i].content.detail %></li>
+                        </ul>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <!-- 影评结束 -->
+    
+    <!-- 评论框 -->
+    <div class="large reveal" id="comment-modal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <h5 class="text-center">新增评论</h5>
+            <h6 class="subheader">标题:</h6>
+            <form action="#" method="post">
+                <input type="text" name="title" placeholder="输入评论标题">
+                <input type="hidden" name="movieid" value=<%= data.movieid %>>
+                <br>
+                <textarea name="detail" id="" cols="30" rows="10"></textarea>
+                <input type="hidden" name="_csrf" value="">
+                <button class="button">提交</button>
+            </form>
+        </div>
+    </div>
+    <!-- 评论框结束 -->
+    <!-- <form action="/likeMovie" method="post">
         <input type="text" name="movieid" value=<%= data.movieid %>>
         <input type="submit" value="like">
     </form>
-
+    
     <form action="/dislikeMovie" method="post">
         <input type="text" name="movieid" value=<%= data.movieid %>>
         <input type="submit" value="dislike">
-    </form>
-    <div>
-        <ul class="pages">
-            <li class="chat page">
-                <div class="chatArea">
-                    <ul class="messages"></ul>
-                </div>
-                <input type="text" class="inputMessage" placeholder="Type here..." />
-            </li>
-        </ul>
-    </div>
+    </form> -->
     
+<% include footer %>
+<% include script %>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/static/js/chat.js"></script>
 </body>
 </html>
