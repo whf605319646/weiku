@@ -9,7 +9,7 @@
     <div class="row">
         <div class="small-8 small-centered columns callout success">
             <h4>发布活动</h4>
-            <form action="/doActivityAdd" method="post">
+            <form action="#" method="post" role="form">
                 <input type="text" name="theme" placeholder="输入活动主题">
                 <input type="date" name="date" placeholder="输入活动时间 2010/01/01">
                 <input type="text" name="content" placeholder="详情">
@@ -17,11 +17,13 @@
                 <input type="text" name="contacts" placeholder="组织方联系方式">
                 <input type="number" name="ptcp_num" placeholder="人数限制">
                 <input type="hidden" name="_csrf" value=<%= csrfToken %>>
-                <button class="button tiny">提交</button>
+                <p class="form-error is-visible tip"></p>
             </form>
+            <button class="button tiny add-btn">提交</button>
         </div>
     </div>
     <% include footer %>
     <% include script %>
+    <script src="/static/js/activity-add.js"></script>
 </body>
 </html>

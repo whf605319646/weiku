@@ -48,3 +48,20 @@ body {
     height: 100%;
     min-height: 300px;
 }
+
+.msg-item {
+    background-color: #000;
+    color:#fff;
+    opacity: 0.4;
+    border-radius: 4px;
+}
+/*自添开始*/
+.top-bar li a:hover {  
+    background-color: #ff6908;}
+#bar-logout {
+    color:#2199e8;
+}
+.del-activity {
+    cursor: pointer;
+}
+/* 自添结束 */

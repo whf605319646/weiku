@@ -11,14 +11,14 @@ var ActivitySchema = new Schema({
     content: String,
     location: String,
     organizer: {
-        uid: {type: String, required: true, minlength: 5, match: /^\w+|\W+$/},
+        uid: {type: String, required: true},
         nickname: String,
         avator: String
     },
     contacts: String,
     rel_user: [
         {
-            uid: {type: String, required: true, minlength: 5, match: /^\w+|\W+$/},
+            uid: {type: String, required: true},
             nickname: String,
             avator: String
         }
@@ -55,6 +55,11 @@ ActivityDAO.prototype.findByUser = function (uid, callback) {
 ActivityDAO.prototype.findById = function (id, callback) {
     'use strict';
     Activity.findOne({'acid': id}).exec(callback);
+};
+
+ActivityDAO.prototype.findByMovieId = function (id, callback) {
+    'use strict';
+    Activity.find({'rel_movie': id}).sort({acid: -1}).exec(callback);
 };
 
 // 参加活动

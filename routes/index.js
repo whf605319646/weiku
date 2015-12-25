@@ -24,7 +24,7 @@ var judgeStateRedirect = function (req, res, next) {
     if (req.isAuthenticated()) {
         return next();
     } else {
-        res.redirect('/user');
+        res.redirect('/');
     }
 };
 
@@ -36,21 +36,30 @@ var judgeStateNoRedirect = function (req, res, next) {
     }
 };
 
+var judgeState = function (req, res) {
+  return res.send({loginState: req.isAuthenticated()});
+};
+
 /* GET home page. */
 router.get('/', movie.findAll);
 
 /*About Movies page*/
 router.get('/movie/:id', movie.findMovieById);
+router.get('/category', movie.classify);
 router.get('/addmovie', judgeStateRedirect, csrfProtection, movie.add);
-router.get('/comment/:movieid', judgeStateRedirect, csrfProtection, movie.commentAdd);
+router.get('/comment/:movieid', csrfProtection, movie.commentAdd);
+router.get('/judgeState',judgeState);
+router.post('/category', movie.findByType);
+router.post('/search', movie.search);
 router.post('/doMovieAdd', judgeStateNoRedirect, upload.single('movie_post'), csrfProtection, movie.addOne);
 router.post('/likemovie', judgeStateNoRedirect, movie.like);
 router.post('/dislikemovie', judgeStateNoRedirect, movie.dislike);
-router.post('/addmomment', judgeStateNoRedirect, csrfProtection, movie.addComment);
+router.post('/addcomment', judgeStateNoRedirect, csrfProtection, movie.addComment);
 
 /*About Activity page*/
 router.get('/activity/:id', activity.findById);
-router.get('/addactivity', judgeStateRedirect, csrfProtection, activity.add);
+router.get('/addactivity/:movieid', judgeStateRedirect, csrfProtection, activity.add);
+router.post('/getrelactivity', activity.findByMovieId);
 router.post('/participate', judgeStateNoRedirect, activity.addParticipator);
 router.post('/deleteActivity', judgeStateNoRedirect, activity.deleteActivity);
 router.post('/doActivityAdd', judgeStateNoRedirect, csrfProtection, activity.addOne);

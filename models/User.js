@@ -5,7 +5,7 @@ var UserSchema = new Schema({
     username: String,
     nickname: String,
     password: String,
-    avator: {type: String, default: '/public/images/default_avator.jpg'}
+    avator: {type: String, default: '/static/images/default_avator.jpg'}
 });
 
 UserSchema.plugin(passportLocalMongoose);

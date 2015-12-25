@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
      <% include head %>
@@ -17,12 +17,13 @@
                 <h3><%= data.title %></h3>
                 <h5>
                     <div class="small-5 columns" id="like-movie" style="cursor:pointer;">
-                        <i class="default-primary fi-like"></i> <%= data.like.length %>
+                        <i class="default-primary fi-like"></i> <span><%= data.like.length %></span>
                     </div> 
                     <div class="small-7 columns" id="dislike-movie" style="cursor:pointer;">
-                        <i class="fi-dislike"></i> <%= data.dislike.length %>
+                        <i class="fi-dislike"></i> <span><%= data.dislike.length %></span>
                     </div>
                 </h5>
+                <p class="form-error is-visible add-like-tip"></p>
                 <h6><strong>导演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.director %></a></h6>
                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor %></a></h6>
                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
@@ -43,11 +44,7 @@
             </section>
 
             <section class="media-object-section medium-3 large-3 columns callout activity-list">
-                <h5 class="">相关活动</h5><a href="/addactivity?movieid=<%= data.movieid %>" class="button tiny secondary">发布活动</a>
-                <div class="callout success small"><a href="#"><h6>活动一活动</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
-                <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
-                <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
-                 <div class="callout success small"><a href="#"><h6>活动一</h6></a><small class="subheader">时间:&nbsp;2015/12/11</small></div>
+                <h5 class="">相关活动</h5><a href="javascript:void(0)" class="button tiny secondary">发布活动</a>
             </section>
         </div>
     </div>
@@ -64,6 +61,14 @@
                 <aside>
                     <div class="chatArea">
                         <ul class="messages">
+                        <div class="row">
+                            <div class="columns small-2">
+                                <img src="/static/images/default_avator.jpg" alt="" class="avator-small">
+                            </div>
+                            <div class="columns small-10">
+                                <p class="msg-item">jjjjj</p>
+                            </div>
+                        </div>
                         </ul>
                     </div>
                 </aside>
@@ -92,19 +97,19 @@
     <div class="row">
         <hr>
         <div class="columns">
-            <ul class="vertical menu" data-accordion-menu>
-                <h5><i class="fi-comments">&nbsp;</i><strong>影片点评:&nbsp;</strong><button  class="tiny secondary button" data-toggle="comment-modal">写影评<i class="fi-pencil"></i></button></h5>
+            <ul class="vertical menu comment-list" data-accordion-menu>
+                <h5><i class="fi-comments">&nbsp;</i><strong>影片点评:&nbsp;<span class="success badge"><%=data.comments.length %></span></strong>&nbsp;&nbsp;<a href="javascript:void(0)" class="tiny secondary button" id="trigger-comment" <% if(user){%> data-toggle="comment-modal" <%}%>>写影评<i class="fi-pencil"></i></a></h5>
                 <% for(var i = 0; i<data.comments.length; i++) { %>
-                    <li> 
+                    <li class="comment-item"> 
                         <a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="/static/images/default_avator.jpg" alt=""/><%= data.comments[i].content.title %></a>
                         <h6>
-                        <a href="javascript:void(0)"><%= data.comments[i].rel_user.name %></a>
+                        <a href="javascript:void(0)"><%= data.comments[i].rel_user.uid %></a>
                             <small class="subheader">
-                            &nbsp;
-                            <%= data.comments[i].date %>
+                            &nbsp;发表于:
+                            <%- data.comments[i].date.toLocaleDateString()%>&nbsp;<%- /\d{2}:\d{2}:\d{2}/.exec(data.comments[i].date.toTimeString())[0] %>
                             </small>
                         </h6>
-                        <p><%= data.comments[i].content.detail %><span>......</span></p>
+                        <p class="gener"><%- data.comments[i].content.detail.substr(0,80) %><span>......</span></p>
                         <ul class="menu vertical nested">
                             <li><%= data.comments[i].content.detail %></li>
                         </ul>
@@ -123,29 +128,22 @@
         <div class="row">
             <h5 class="text-center">新增评论</h5>
             <h6 class="subheader">标题:</h6>
-            <form action="#" method="post">
+            <form action="#" role="form" id="add-comment-form">
                 <input type="text" name="title" placeholder="输入评论标题">
-                <input type="hidden" name="movieid" value=<%= data.movieid %>>
+                <input type="hidden" name="movieid" id="c-mid" value=<%= data.movieid %>>
                 <br>
-                <textarea name="detail" id="" cols="30" rows="10"></textarea>
-                <input type="hidden" name="_csrf" value="">
-                <button class="button">提交</button>
+                <textarea name="detail" cols="30" rows="10"></textarea>
+                <input type="hidden" name="_csrf">
+                <p class="form-error is-visible comment-tip"></p>
             </form>
+            <button class="button tiny comment-btn">提交</button>
         </div>
     </div>
     <!-- 评论框结束 -->
-    <!-- <form action="/likeMovie" method="post">
-        <input type="text" name="movieid" value=<%= data.movieid %>>
-        <input type="submit" value="like">
-    </form>
-    
-    <form action="/dislikeMovie" method="post">
-        <input type="text" name="movieid" value=<%= data.movieid %>>
-        <input type="submit" value="dislike">
-    </form> -->
     
 <% include footer %>
 <% include script %>
+    <script src="/static/js/movie.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/static/js/chat.js"></script>
 </body>

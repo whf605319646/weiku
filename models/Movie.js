@@ -28,7 +28,10 @@ var MovieSchema = new Schema({
                 uid: String,
                 name: String
             },
-            content: Object,
+            content: {
+                title: String,
+                detail: String
+            },
             date: {type: Date, default: Date.now}
         }
     ]
@@ -67,10 +70,16 @@ MovieDAO.prototype.findByUser = function (uid, callback) {
     Movie.find({'publisher.uid': uid}).sort({movieid: -1}).exec(callback);
 };
 
-// 查找所有的电影，按movieid顺序排列
-MovieDAO.prototype.findAll = function (callback) {
+// 查找该分类的电影，按movieid倒序排列
+MovieDAO.prototype.findByType = function (type, callback) {
     'use strict';
-    Movie.find().sort({movieid: 1}).exec(callback);
+    Movie.find({type: [type]}).sort({movieid: -1}).exec(callback);
+};
+
+// 按照标题模糊搜索
+MovieDAO.prototype.findByTitle = function (search, callback) {
+    'use strict';
+    Movie.find().where({title: new RegExp('^' + search)}).sort({movieid: -1}).exec(callback);
 };
 
 // 查找所有电影，按movieid倒序排列

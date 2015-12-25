@@ -1,8 +1,4 @@
 $(function () {
-    var testuser = {
-        username: '小胡',
-        avator: 'http://avator.jpg'
-    };
     var content = $('.message');
     var input = $('.inputMessage');
     // 默认链接到渲染页面的服务器
@@ -20,10 +16,10 @@ $(function () {
         $('ul.messages').append('<li>'+user.username+' 说: '+msg+'</li>');
     });
 
-    input.keydown(function (e) {
+    input.on('keydown',function (e) {
         var msg;
         if (e.which === 13) {
-            e.preventDefault();
+            e.stopPropagation();
             msg = $(this).val();
             if (!msg) return;
             socket.send(msg);

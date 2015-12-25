@@ -11,23 +11,15 @@ var isAuthenticated = function (req, res, next) {
     if (req.isAuthenticated()) {
         return next();
     } else {
-        res.redirect('/user');
+        res.redirect('/');
         // res.send({loginState: false});
     }
 }
 /* GET users listing. */
 router.get('/:uid', isAuthenticated, user.getUser);
-router.get('/', function (req, res) {
-    res.render('login', {info: ''});
-});
 router.post('/',passport.authenticate('local'), user.login);
 
 router.post('/authenticate/logout', user.logout);
-
-router.get('/authenticate/register', function (req, res) {
-    res.render('register', {info: ''});
-});
-
 router.post('/authenticate/register', user.addUser);
 
 // 用户相关的资料

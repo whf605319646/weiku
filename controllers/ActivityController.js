@@ -6,7 +6,7 @@ var csurf = require('csurf');
 
 
 exports.add = function (req, res, next) {
-    res.render('addActivity', {csrfToken: req.csrfToken()});
+    res.render('addActivity', {user: req.user, csrfToken: req.csrfToken()});
 };
 
 exports.addOne = function (req, res, next) {
@@ -19,7 +19,7 @@ exports.addOne = function (req, res, next) {
             content: xss(req.body.content),
             location: xss(req.body.location),
             contacts: xss(req.body.contacts),
-            rel_movie: xss(req.query.movieid),
+            rel_movie: xss(req.body.movieid),
             ptcp_num: xss(req.body.ptcp_num),
             organizer: {
                 uid: req.user.username,
@@ -27,7 +27,7 @@ exports.addOne = function (req, res, next) {
                 avator: req.user.avator
             }
         };
-        if (formdata.theme.length>0 && /^\d+$/.test(formdata.rel_movie) && /\d{4}\/\d{1,2}\/\d{1,2}/.test(formdata.date)) {
+        if (formdata.theme.length>0 && /^\d+$/.test(formdata.rel_movie) && /\d{4}\-\d{1,2}\-\d{1,2}/.test(formdata.date)) {
             Activity.addOne(formdata, function (err, data){
                 if (err){
                     log.error(err);
@@ -58,7 +58,7 @@ exports.addParticipator = function (req, res, next) {
                 log.error(err);
                 res.sendStatus(500);
             } else if(data.status) {
-                res.send({status: true, info: '成功参加'});
+                res.send({status: true, data: {uid: formdata.uid, nickname:formdata.nickname,avator: formdata.avator, num: data.rel_user.length}});
             } else {
                 res.send({status: false, info: data.info});
             }
@@ -104,12 +104,23 @@ exports.findByUser = function (req, res, next) {
 };
 
 exports.findById = function (req, res, next) {
-    Activity.findById(req.params.id, function (err, data) {
+    Activity.findById(parseInt(req.params.id,10), function (err, data) {
         if (err) {
             log.error(err);
             res.sendStatus(404);
         } else {
-            res.render('activity', {status: true, activity_data: data});
+            res.render('activity', {status: true, activity_data: data, user: req.user});
+        }
+    });
+};
+
+exports.findByMovieId = function (req, res, next) {
+    Activity.findByMovieId(req.body.movieid, function (err, data) {
+        if (err) {
+            log.error(err);
+            res.status(500).send();
+        } else {
+            res.send({status: true,rel_actv: data});
         }
     });
 };

@@ -55,7 +55,7 @@ exports.addOne = function (req, res, next) {
 
 // 渲染新增电影页面
 exports.add = function (req, res, next) {
-    res.render('addMovie', { csrfToken: req.csrfToken() });
+    res.render('addMovie', { csrfToken: req.csrfToken(),user: req.user });
 };
 
 exports.findMovieById = function (req, res, next) {
@@ -67,7 +67,7 @@ exports.findMovieById = function (req, res, next) {
             log.error(err);
             res.sendStatus(500);
         } else if (data){
-            res.render('movie', {status: true, data: data});
+            res.render('movie', {status: true, data: data, user: req.user});
         } else {
             res.sendStatus(404);
         }
@@ -96,13 +96,43 @@ exports.findAll = function (req, res, next) {
             res.send({status: false});
         }
         else {    
-            res.render('index', {status: true, data: data});
+            res.render('index', {status: true, data: data, user: req.user});
         }
     });  
 };
  
+// 电影分类
+exports.classify = function (req, res, next) {
+    res.render('category', {category: req.query.type, user: req.user});
+};
+
+exports.findByType = function (req, res, next) {
+    Movie.findByType(req.body.type, function (err, data) {
+        if (err) {
+            log.error(err);
+            next(err);
+        } else {
+            res.send({status: true, data: data});
+        }
+    });
+};
+
+// 搜索
+exports.search = function (req, res, next) {
+    Movie.findByTitle(req.body.search, function (err, data) {
+        if (err) {
+            log.error(err);
+            next(err);
+        } else {
+            res.send({status: true, data: data});
+        } 
+    });
+};
+
+// 评论
 exports.commentAdd = function (req, res, next) {
-    res.render('comment', { 
+    res.send({
+        status: true, 
         movieid: req.params.movieid, 
         csrfToken: req.csrfToken() 
     });
@@ -129,7 +159,7 @@ exports.addComment = function (req, res, next) {
                 log.error(err);
                 res.status(500).send({status: false, info: '服务器内部错误'});
             } else {
-                res.redirect('/movie/'+req.body.movieid);
+                res.send({status: true, data: formdata});
             }
         });
     }

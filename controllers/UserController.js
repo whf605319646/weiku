@@ -21,7 +21,7 @@ exports.getUser = function (req, res) {
     if (!req.user) {
         res.send({status: false, info: '未登录'});
     } else {
-        res.render('user', {status: true, userdata: req.user});
+        res.render('user', {status: true, userdata: req.user, user: req.user});
     }
 };
 
@@ -48,8 +48,7 @@ exports.logout = function (req, res, next) {
             log.error(err);
             return next (err);
         }
-        res.redirect('/user');
-        res.end();
+        res.send({status: true});
     });
 };
 
@@ -64,7 +63,7 @@ exports.addUser = function (req, res, next) {
     User.register(new User({username: req.body.username}), req.body.password, function (err, user) {
         if (err) {
             log.error(err);
-            return res.render('register', {info: '用户名已被使用'});
+            return res.send({status: false, info: '用户名已被使用'});
         } 
         passport.authenticate('local')(req, res, function () {
             req.session.save(function (err) {
@@ -72,8 +71,7 @@ exports.addUser = function (req, res, next) {
                     log.error(err);
                     return next(err);
                 }
-                
-                res.redirect('/user/' + req.body.username);
+                res.send({status: true});
             });
         });
 
@@ -109,13 +107,13 @@ exports.updateAvator = function (req, res,next) {
                 log.error(err);
                 return next(err);
             } else if (doc) {
-                doc.update({avator: req.file.filename}, function (err, data) {
+                doc.update({avator: '/static/images/'+req.file.filename}, function (err, data) {
                     if (err) {
                         log.error(err);
                         return next(err);
                     }
                     res.type('html');
-                    res.send({status: true, avator: req.file.filename});
+                    res.send({status: true, avator: '/static/images/'+req.file.filename});
                 });
             } else {
                 return next();

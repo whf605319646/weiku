@@ -3756,10 +3756,6 @@ table.hover tr:nth-of-type(even):hover {
     opacity: 0.8; }
   .top-bar input.button {
     width: auto; }
-
-  .top-bar li a:hover {  
-    background-color: #ff6908;}
-
 @media screen and (min-width: 40em) {
   .top-bar-left {
     float: left; }
