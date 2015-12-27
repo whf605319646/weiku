@@ -9,17 +9,17 @@
     <div class="row">
         <div class="small-9 small-centered columns">
             <h5>新增电影</h5>
-            <form action="/doMovieAdd" method="post" enctype="multipart/form-data">
-                <input type="text" name="title" placeholder="输入电影名称">
+            <form role="form" id="add-movie" enctype="multipart/form-data">
+                <input type="text" name="title" placeholder="输入电影名称" required>
                 <fieldset class="fieldset">
                     <legend>选择电影类型</legend>
-                    <input id="checkbox1" type="checkbox" name="type"><label for="checkbox1">青春</label>
-                    <input id="checkbox2" type="checkbox" name="type"><label for="checkbox2">励志</label>
-                    <input id="checkbox3" type="checkbox" name="type"><label for="checkbox3">爱情</label>
-                    <input id="checkbox4" type="checkbox" name="type"><label for="checkbox4">搞笑</label>
-                    <input id="checkbox5" type="checkbox" name="type"><label for="checkbox5">创意</label>
-                    <input id="checkbox6" type="checkbox" name="type"><label for="checkbox6">人生</label>
-                    <input id="checkbox7" type="checkbox" name="type"><label for="checkbox7">广告</label>
+                    <input id="radio1" type="radio" name="type" value="青春"><label for="radio1">青春</label>
+                    <input id="radio2" type="radio" name="type" value="励志"><label for="radio2">励志</label>
+                    <input id="radio3" type="radio" name="type" value="爱情"><label for="radio3">爱情</label>
+                    <input id="radio4" type="radio" name="type" value="搞笑"><label for="radio4">搞笑</label>
+                    <input id="radio5" type="radio" name="type" value="创意"><label for="radio5">创意</label>
+                    <input id="radio6" type="radio" name="type" value="人生"><label for="radio6">人生</label>
+                    <input id="radio7" type="radio" name="type" value="广告"><label for="radio7">广告</label>
                 </fieldset>
                 <input type="text" name="actor" placeholder="输入演员，以逗号分隔">
                 <input type="text" name="director" placeholder="输入导演，以逗号分隔">
@@ -35,19 +35,22 @@
                         <input type="number" name="duration" value="6" max="150" id="duration-slider">
                     </div>
                 </fieldset>
-                <input type="text" name="play_src" placeholder="播放地址">
+                <input type="text" name="play_src" placeholder="播放地址" required>
                 <input type="text" name="post_src" placeholder="海报地址">
                 <fieldset class="fieldset">
                     <legend>上传海报(可选)</legend>
                     <input type="file" name="movie_post">
                 </fieldset>
-                <textarea name="detail" cols="30" rows="10" placeholder="输入剧情描述"></textarea>
+                <textarea name="detail" cols="30" rows="10" placeholder="输入剧情描述" required></textarea>
                 <input type="hidden" name="_csrf" value=<%= csrfToken %>>
-                <button class="button tiny">提交</button>
+                <p class="form-error is-visible tip"></p>
             </form>
+            <button class="button tiny add-btn">提交</button>
         </div>
     </div>
     <% include footer %>
     <% include script %>
+    <script src="/static/js/upload.js"></script>
+    <script src="/static/js/movie-add.js"></script>
 </body>
 </html>

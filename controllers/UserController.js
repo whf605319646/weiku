@@ -100,23 +100,23 @@ exports.updateAvator = function (req, res,next) {
     upload(req, res, function (err) {
         if (err) {
             log.error(err);
-            return next(err);
+            return res.send({status: false, error: err});
         }
         User.findOne({username: req.user.username}, function (err, doc) {
             if (err) {
                 log.error(err);
-                return next(err);
+                res.send({status: false, error: err});
             } else if (doc) {
-                doc.update({avator: '/static/images/'+req.file.filename}, function (err, data) {
+                doc.update({avator: '/uploads/'+req.file.filename}, function (err, data) {
                     if (err) {
                         log.error(err);
-                        return next(err);
+                        res.send({status: false, error: err});
+                    } else {
+                        res.send({status: true, avator: '/uploads/'+req.file.filename});
                     }
-                    res.type('html');
-                    res.send({status: true, avator: '/static/images/'+req.file.filename});
                 });
             } else {
-                return next();
+                res.send({status: false});
             }
         });
     });

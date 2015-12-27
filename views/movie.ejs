@@ -24,8 +24,8 @@
                     </div>
                 </h5>
                 <p class="form-error is-visible add-like-tip"></p>
-                <h6><strong>导演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.director %></a></h6>
-                <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor %></a></h6>
+                <h6><strong>导演:</strong> <a class="default-blue" href="javascript:void(0)"><%- data.director.join(',') %></a></h6>
+                <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
                 <h6><strong>本站发布时间: </strong>

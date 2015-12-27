@@ -1,9 +1,9 @@
 $(function () {
-    var Add = function (mid) {
+    var AddActivity = function (mid) {
         this.movieid = mid;
         this.addBtn = $('.add-btn');
     };
-    Add.prototype.bindEvent = function () {
+    AddActivity.prototype.bindEvent = function () {
         var that = this;
         this.addBtn.on('click', function (e) {
             var data = {
@@ -33,5 +33,5 @@ $(function () {
         });
     };
     var mid =/\d+$/.exec(location.href)[0];
-    new Add(mid).bindEvent();
+    new AddActivity(mid).bindEvent();
 });

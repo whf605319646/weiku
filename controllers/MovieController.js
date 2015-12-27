@@ -5,11 +5,12 @@ var xss = require('xss');
 
 
 exports.addOne = function (req, res, next) {
+
     var formdata = {
         title: xss(req.body.title),
         type: xss(req.body.type),
-        actor: xss(req.body.actor),
-        director: xss(req.body.director),
+        actor: xss(req.body.actor).split(','),
+        director: xss(req.body.director).split(','),
         detail: xss(req.body.detail),
         duration: xss(req.body.duration),
         post_src: xss(req.body.post_src),
@@ -29,14 +30,14 @@ exports.addOne = function (req, res, next) {
     } else {
         // 如果有用户上传文件
         if (req.file) {
-            formdata.post_src = req.file.filename;
+            formdata.post_src = '/uploads/'+req.file.filename;
             Movie.addOne(formdata, function (err, data) {
                 if (err){
                     log.error(err);
                     res.status(500).send({status: false, info: '服务器内部错误'});
                 } else {
                     // 如果新增成功，重定向到新电影主页
-                    res.redirect('/movie/'+ data.movieid);
+                    res.send({status: true, movieid: data.movieid});
                 }
             });
         } else {//否则
@@ -46,7 +47,7 @@ exports.addOne = function (req, res, next) {
                     res.status(500).send({status: false, info: '服务器内部错误'});
                 } else {
                     // 如果新增成功，重定向到新电影主页
-                    res.redirect('/movie/'+ data.movieid);
+                    res.send({status: true, movieid: data.movieid});
                 }
             });
         }

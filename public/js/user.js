@@ -52,9 +52,7 @@ $(function () {
                 return ;
             }
             $.post('/user/update/info', {nickname: nickname} ,function (res) {
-                if (res.status) {
-                    $('#nickname-input').val(nickname);
-                } else {
+                if (!res.status) {
                     $('.update-info-tip').html('修改信息失败');
                 }
             });
@@ -76,7 +74,13 @@ $(function () {
         });
 
         this.updateAvator.on('click', function () {
-
+            $('#up-avator').fileUpload('/user/update/avator', {}, function (res) {
+                if (res.status) {
+                    $('.avator-large').replaceWith('<img src="'+res.avator+'" class="avator-large" alt="加载头像失败" />');
+                    $('#up-avator').find('input').val('');
+                    $('#avator-modal').foundation('close');
+                }
+            })
         });
     };
     // 初始化
