@@ -15,14 +15,20 @@
                     <dl>
                         <dt class="secondary label">活动主题:</dt>
                         <dd><%= activity_data.theme %></dd>
+                        <br>
                         <dt>活动时间:</dt>
                         <dd><%= activity_data.date %></dd>
+                        <br>
                         <dt class="secondary label">活动地点:</dt>
                         <dd><%= activity_data.location %></dd>
+                        <br>
                         <dt class="secondary label">组织者:</dt>
-                        <dd><img src="<%= activity_data.organizer.avator %>" alt="头像" class="avator-small"/><%= activity_data.organizer.nickname %></dd>
+                        <dd><img src="<%= activity_data.organizer.avator %>" alt="头像" class="avator-large"/>
+                        <h6><a href="javascript:void(0)" class="default-blue"><%= activity_data.organizer.nickname %></a></h6></dd>
+                        <br>
                         <dt class="secondary label">组织方联系方式:</dt>
                         <dd><%= activity_data.contacts %></dd>
+                        <br>
                         <dt class="secondary label">活动内容:</dt>
                         <dd><%= activity_data.content %></dd>
                     </dl>

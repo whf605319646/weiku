@@ -49,8 +49,10 @@ router.get('/category', movie.classify);
 router.get('/addmovie', judgeStateRedirect, csrfProtection, movie.add);
 router.get('/comment/:movieid', csrfProtection, movie.commentAdd);
 router.get('/judgeState',judgeState);
+router.get('/search', movie.search);
+
 router.post('/category', movie.findByType);
-router.post('/search', movie.search);
+router.post('/dosearch', movie.doSearch);
 router.post('/doMovieAdd', judgeStateNoRedirect, upload.single('movie_post'), csrfProtection, movie.addOne);
 router.post('/likemovie', judgeStateNoRedirect, movie.like);
 router.post('/dislikemovie', judgeStateNoRedirect, movie.dislike);

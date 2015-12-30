@@ -1,4 +1,7 @@
-
+    <!-- 加载动画蒙层 -->
+    <div id="loading">
+        <img src="/static/images/loading.gif" alt="加载中">
+    </div>
     <div class="title-bar" data-responsive-toggle="top-navigator" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
         <div class="title-bar-title"><a href="/">微.酷</a></div>
@@ -24,7 +27,7 @@
         <section class="top-bar-right">
             <ul class="dropdown menu"  data-dropdown-menu>
                 <li class="hide-for-medium-only">
-                    <input type="search" placeholder="搜索" data-toggle="search-result" id="search-input">
+                    <input type="search" placeholder="搜索" id="search-input">
                 </li>
                 <% if(!user) {%>
                 <li id="bar-login"><a data-toggle="login-modal">登录</a></li>
@@ -32,17 +35,15 @@
                 <% } else {%>
                 <li><a href="/user/<%= user.username %>"><%= user.username %></a></li>
                 <li><a href="" id="bar-logout">退出</a></li>
+                <input type="hidden" id="storage-name" value="<%= user.username %>"/>
+                <input type="hidden" id="storage-nickname" value="<%= user.nickname %>"/>
+                <input type="hidden" id="storage-avator" value="<%= user.avator %>"/>
                 <% } %>
             </ul>
         </section>
     </nav>
     <!-- 导航栏结束 -->
 
-    <!-- 搜索结果 -->
-    <div class="dropdown-pane" id="search-result" data-dropdown>
-      <!-- AJAX加载结果 -->
-    </div>
-    <!-- 搜索结束 -->
     <!-- 登录框 -->
     <div class="small reveal" id="login-modal" data-reveal>
         <button class="close-button" data-close aria-label="Close reveal" type="button">

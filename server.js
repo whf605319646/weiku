@@ -55,7 +55,6 @@ var io = require('socket.io').listen(server);
 var ios = require('socket.io-express-session');
 io.use(ios(sessionConfig)); // 使用对session模块的支持
 var roomUser = {};
-var onLine = 0;
 io.on('connection', function (socket) {
     var myIndexOf = function (obj, array) {
         for (var i = 0; i < array.length; i++) {
@@ -96,9 +95,8 @@ io.on('connection', function (socket) {
             user.tab = 1; 
             roomUser[roomid].push(user);
             socket.join(roomid);
-            onLine++; //在线人数增加
-            socket.to(roomid).emit('sys', user.username +'加入聊天室');
-            socket.to(roomid).emit('online', onLine);
+            socket.to(roomid).emit('sys', roomUser[roomid].length);
+            socket.emit('sys', roomUser[roomid].length);
         } else {
             var index = myIndexOf(user,roomUser[roomid]);
             roomUser[roomid][index].tab++;
@@ -113,8 +111,8 @@ io.on('connection', function (socket) {
         if (myIndexOf(user,roomUser[roomid])< 0) {  
           return false;
         }
-        socket.emit('new message', user, msg);
-        socket.to(roomid).emit('new message', user, msg);
+        socket.emit('my message', msg);
+        socket.to(roomid).emit('new message', msg);
     });
 
     // 关闭
@@ -127,9 +125,7 @@ io.on('connection', function (socket) {
                 var index = myIndexOf(user,roomUser[roomid]);
                 if (index !== -1 && roomUser[roomid][index].tab === 1) {
                     roomUser[roomid].splice(index, 1);
-                    onLine--;
-                    socket.to(roomid).emit('sys',user.username+'已退出聊天室');
-                    socket.to(roomid).emit('online', onLine);
+                    socket.to(roomid).emit('sys',roomUser[roomid].length);
                 } else if (index !== -1 && roomUser[roomid][index].tab > 1){
                     roomUser[roomid][index].tab--;
                 }

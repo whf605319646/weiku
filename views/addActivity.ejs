@@ -7,11 +7,18 @@
 <body>
     <% include header %>
     <div class="row">
+    <!-- 
+        /**
+         * 发布活动模块
+         * 日期选择选用了第三方插件laydate,原插件地址：
+         * http://www.jq22.com/jquery-info1059
+         * 感谢插件作者：风夏
+         */ -->
         <div class="small-8 small-centered columns callout success">
             <h4>发布活动</h4>
             <form action="#" method="post" role="form">
                 <input type="text" name="theme" placeholder="输入活动主题" required>
-                <input type="date" name="date" placeholder="输入活动时间 2010/01/01" required>
+                <input type="text" name="date" id="pickdate" placeholder="输入活动时间" required>
                 <input type="text" name="content" placeholder="详情" required>
                 <input type="text" name="location" placeholder="活动地点" required>
                 <input type="text" name="contacts" placeholder="组织方联系方式" required>
@@ -24,6 +31,7 @@
     </div>
     <% include footer %>
     <% include script %>
+    <script src="/static/addon/laydate/laydate.js"></script>
     <script src="/static/js/activity-add.js"></script>
 </body>
 </html>

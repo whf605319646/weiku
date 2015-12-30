@@ -79,7 +79,7 @@ MovieDAO.prototype.findByType = function (type, callback) {
 // 按照标题模糊搜索
 MovieDAO.prototype.findByTitle = function (search, callback) {
     'use strict';
-    Movie.find().where({title: new RegExp('^' + search)}).sort({movieid: -1}).exec(callback);
+    Movie.find().where({title: new RegExp(search)}).sort({movieid: -1}).exec(callback);
 };
 
 // 查找所有电影，按movieid倒序排列

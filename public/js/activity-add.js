@@ -1,3 +1,9 @@
+/**
+ * 发布活动模块
+ * 日期选择选用了第三方插件laydate,原插件地址：
+ * http://www.jq22.com/jquery-info1059
+ * 感谢插件作者：风夏
+ */
 $(function () {
     var AddActivity = function (mid) {
         this.movieid = mid;
@@ -32,6 +38,9 @@ $(function () {
             });
         });
     };
+    // 初始化laydate插件
+    laydate({elem: '#pickdate'});
+    
     var mid =/\d+$/.exec(location.href)[0];
     new AddActivity(mid).bindEvent();
 });

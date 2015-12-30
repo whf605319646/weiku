@@ -5,28 +5,16 @@ $(function(){
         this.toTop = $('.back-to-top');
         this.loginBtn = $('#login');
         this.registerBtn = $('#register');
+        this.search = $('#search-input');
     }
 
     Header.prototype.bindEvent = function () {
         var that = this;
         this.search.on('keydown', function (e) {
-            var data_in = $('#search-input');
+            var e = e || window.event;
+            var data_in = $('#search-input').val();
             if (e.which === 13) {
-                // $('#search-result').html('');
-                $.post('/search',{search: data_in}, function (res) {
-                    if (res.status) {
-                        for (var i=0;i<res.data.length;i++) {
-                            $('<div class="row">'+
-                                   '<div class="columns small-4">'+
-                                      '<img  class="thumbnail" src="/static/images/default-poster.png" alt="搜索结果">'+
-                                   '</div>'+
-                                   '<div class="columns small-8">'+
-                                      '<h6>'+res.data.title+'</h6>'+
-                                   '</div>'+
-                              '</div>').appendTo('#search-result');
-                        }
-                    }
-                });
+                location.href = '/search?tag='+encodeURIComponent(data_in) ;
             }
         });
 
@@ -51,6 +39,14 @@ $(function(){
                         $('#bar-login').replaceWith('<li><a href="/user/'+res.sessiondata.username
                             +'">'+res.sessiondata.username+'</a></li>');
                         $('#bar-register').replaceWith('<li><a href="" id="bar-logout">退出</a></li>');
+
+                        // sessionStorage存储用户名和头像
+                        if (window.sessionStorage) {
+                            var name = res.sessiondata.nickname || res.sessiondata.username,
+                                avator = res.sessiondata.avator;
+                            sessionStorage.setItem('name', name);
+                            sessionStorage.setItem('avator', avator);
+                        }
                     } 
                 });
             }
@@ -60,6 +56,7 @@ $(function(){
         $('.top-bar-right').on('click','#bar-logout', function (e) {
             $.post('/user/authenticate/logout',function (res) {
                 if (res.status) {
+                    sessionStorage.clear();
                     location.reload();
                 }
             });
@@ -106,5 +103,14 @@ $(function(){
         });
     };
 
-    new Header().bindEvent();
+    Header.prototype.loaded = function () {
+        $(document).ready(function () {
+            document.getElementById('loading').style.display="none";
+        });
+    };
+    Header.prototype.init = function () {
+        this.bindEvent();
+        this.loaded();
+    };
+    new Header().init();
 });

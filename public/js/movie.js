@@ -33,14 +33,7 @@ $(function () {
                 }
             });
          });
-         // 聊天框监听是否登录状态
-         this.chatField.on('focus', function () {
-            $.get('/judgeState', function (res) {
-                if (!res.loginState) {
-                    $('#login-modal').foundation('open');
-                }
-            });
-         });
+         
          // 发布活动监听是否登陆状态
          this.publishActv.on('click', function (e) {
             $.get('/judgeState', function (res) {
@@ -131,9 +124,19 @@ $(function () {
         });
     };
 
+    Movie.prototype.setLocalStorage = function () {
+        // 加载页面时判断是否登录状态
+        var name = $('#storage-nickname').val()||$('#storage-name').val();
+        var avator = $('#storage-avator').val();
+        if (name && avator && window.sessionStorage) {
+            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('avator', avator);
+        }
+    };
     Movie.prototype.init = function () {
         this.bindEvent();
         this.getActivity();
+        this.setLocalStorage();
         this.initCommentForm();
     };
 

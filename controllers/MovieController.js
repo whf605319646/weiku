@@ -118,8 +118,12 @@ exports.findByType = function (req, res, next) {
     });
 };
 
-// 搜索
 exports.search = function (req, res, next) {
+    res.render('search', {tag: req.query.tag, user: req.user});
+};
+// 搜索
+exports.doSearch = function (req, res, next) {
+
     Movie.findByTitle(req.body.search, function (err, data) {
         if (err) {
             log.error(err);
