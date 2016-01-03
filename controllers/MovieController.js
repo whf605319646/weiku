@@ -18,10 +18,7 @@ exports.addOne = function (req, res, next) {
         comments: [],
         like: [],
         dislike: [],
-        publisher: {
-            uid: req.user.username,
-            name: req.user.nickname
-        }
+        publisher: req.user.username,
     };
     if (!req.user) {
         res.send({status: false, info: '未登录'});
@@ -148,10 +145,7 @@ exports.addComment = function (req, res, next) {
         res.send({status: false, info: '数据不完整'});
     } else {
         var formdata = {
-            rel_user: {
-                uid: req.user.username,
-                name: req.user.nickname
-            },
+            rel_user: req.user.username,
             content: {
                 title: xss(req.body.title),
                 detail: xss(req.body.detail)
@@ -164,6 +158,7 @@ exports.addComment = function (req, res, next) {
                 log.error(err);
                 res.status(500).send({status: false, info: '服务器内部错误'});
             } else {
+                formdata.avator = req.user.avator;
                 res.send({status: true, data: formdata});
             }
         });

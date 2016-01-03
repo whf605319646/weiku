@@ -23,7 +23,7 @@ $(function () {
                 _csrf: $('input[name="_csrf"]').val()
             };
             for (var ele in data) {
-                if (!data[ele]) {
+                if (ele!== 'ptcp_num' && !data[ele]) {
                     $('.tip').html('请填写完整数据')
                     return;
                 }
@@ -31,7 +31,7 @@ $(function () {
             $.post('/doActivityAdd', data, function (res) {
                 if (res.status) {
                     $('input').val('');
-                    history.go(-1);
+                    location.href = '/activity/'+res.data.acid;
                 } else {
                     $('.tip').html(res.info);
                 }

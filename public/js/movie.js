@@ -95,10 +95,11 @@ $(function () {
 
                     that.commentList.children('h5').after(
                         '<li class="comment-item has-submenu is-accordion-submenu-parent" aria-haspopup="true">'+ 
-                            '<a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="/static/images/default_avator.jpg" alt=""/>'+
+                            '<a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="'+
+                            res.data.avator+'" alt=""/>'+
                             res.data.content.title+'</a>'+
                             '<h6>'+
-                            '<a href="javascript:void(0)">'+res.data.rel_user.uid +'</a>'+
+                            '<a href="javascript:void(0)">'+res.data.rel_user+'</a>'+
                                 '<small class="subheader">&nbsp;发表于: 刚刚</small>'+
                             '</h6>'+
                             '<p class="gener hide">'+res.data.content.detail.substr(0,80) +'<span>......</span></p>'+
@@ -106,6 +107,8 @@ $(function () {
                                 '<li>'+res.data.content.detail +'</li>'+
                             '</ul>'+
                         '</li>');
+                    var commentNum = parseInt($('.badge').html(),10)+1;
+                    $('.badge').html(commentNum);
 
                 } else {
                     $('#add-comment-form .comment-tip').html(res.info);

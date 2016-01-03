@@ -9796,3 +9796,992 @@ Error: Not Found
     at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
     at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
 [2015-12-30 23:11:43.038] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:06:36.481] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1167:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 14:06:36.493] [ERROR] server - ::1 - - "GET /activity/141 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:11:04.141] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1167:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 14:11:04.156] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:19:10.529] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1167:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 14:19:10.548] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:27:46.374] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1167:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 14:27:46.404] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:42:07.227] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Query.<anonymous> (C:\Users\Administrator\weiku\models\Activity.js:52:18)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+[2016-01-03 14:42:07.255] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:43:14.786] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Query.<anonymous> (C:\Users\Administrator\weiku\models\Activity.js:52:18)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+[2016-01-03 14:43:14.814] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 14:55:52.422] [ERROR] server - { [CastError: Cast to ObjectId failed for value "username" at path "_id"]
+  message: 'Cast to ObjectId failed for value "username" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'username',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "username" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Query.<anonymous> (C:\Users\Administrator\weiku\models\Activity.js:52:18)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+[2016-01-03 14:55:52.449] [ERROR] server - ::1 - - "GET /activity/142 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:01:04.837] [ERROR] server - { [CastError: Cast to ObjectId failed for value "admin" at path "_id"]
+  message: 'Cast to ObjectId failed for value "admin" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "admin" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Query.<anonymous> (C:\Users\Administrator\weiku\models\Activity.js:52:18)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+[2016-01-03 15:01:04.853] [ERROR] server - ::1 - - "GET /activity/143 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:04:09.720] [ERROR] server - { [CastError: Cast to ObjectId failed for value "admin" at path "_id"]
+  message: 'Cast to ObjectId failed for value "admin" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "admin" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Query.<anonymous> (C:\Users\Administrator\weiku\models\Activity.js:52:18)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+[2016-01-03 15:04:09.749] [ERROR] server - ::1 - - "GET /activity/143 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:17:24.285] [ERROR] server - { [CastError: Cast to ObjectId failed for value "admin" at path "_id"]
+  message: 'Cast to ObjectId failed for value "admin" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "admin" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.cb (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1047:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 15:17:24.314] [ERROR] server - ::1 - - "GET /activity/143 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:21:03.617] [ERROR] server - { [CastError: Cast to ObjectId failed for value "admin" at path "_id"]
+  message: 'Cast to ObjectId failed for value "admin" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "admin" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at Immediate.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1167:16)
+    at Immediate._onImmediate (C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\mquery\lib\utils.js:137:16)
+    at processImmediate [as _immediateCallback] (timers.js:358:17)
+[2016-01-03 15:21:03.645] [ERROR] server - ::1 - - "GET /activity/143 HTTP/1.1" 404 9 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:25:56.048] [ERROR] server - [Error: document must have an _id before saving]
+Error: document must have an _id before saving
+    at null._onTimeout (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:124:18)
+    at Timer.listOnTimeout (timers.js:110:15)
+[2016-01-03 15:25:56.057] [ERROR] server - ::1 - - "POST /doActivityAdd HTTP/1.1" 500 47 "http://localhost/addactivity/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 15:30:16.648] [ERROR] server - { [CastError: Cast to ObjectId failed for value "admin" at path "_id"]
+  message: 'Cast to ObjectId failed for value "admin" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "admin" at path "_id"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at ObjectId.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:134:13)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:173:17)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:809:18
+    at Array.map (native)
+    at ObjectId.handleArray (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schematype.js:808:14)
+    at ObjectId.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\objectid.js:171:20)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:200:39)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1088:10)
+    at Function.find (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:1138:13)
+    at populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2528:15)
+    at Function.Model.populate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2356:5)
+    at C:\Users\Administrator\weiku\models\Activity.js:53:18
+    at Query.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2139:28)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+[2016-01-03 15:30:16.675] [ERROR] server - ::1 - - "GET /activity/143 HTTP/1.1" 404 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 16:32:30.203] [ERROR] server - { [ValidationError: User validation failed]
+  message: 'User validation failed',
+  name: 'ValidationError',
+  errors: 
+   { _id: 
+      { [CastError: Cast to ObjectID failed for value "huguozhi" at path "_id"]
+        message: 'Cast to ObjectID failed for value "huguozhi" at path "_id"',
+        name: 'CastError',
+        kind: 'ObjectID',
+        value: 'huguozhi',
+        path: '_id',
+        reason: undefined } } }
+ValidationError: User validation failed
+    at MongooseError.ValidationError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\validation.js:23:11)
+    at model.Document.invalidate (C:\Users\Administrator\weiku\node_modules\mongoose\lib\document.js:1280:32)
+    at model.Document.set (C:\Users\Administrator\weiku\node_modules\mongoose\lib\document.js:645:10)
+    at model.Document.set (C:\Users\Administrator\weiku\node_modules\mongoose\lib\document.js:512:18)
+    at model.Document (C:\Users\Administrator\weiku\node_modules\mongoose\lib\document.js:62:10)
+    at model.Model (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:45:12)
+    at new model (C:\Users\Administrator\weiku\node_modules\mongoose\lib\model.js:2932:11)
+    at exports.addUser (C:\Users\Administrator\weiku\controllers\UserController.js:63:19)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (C:\Users\Administrator\weiku\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:02:01.905] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:02:01.917] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:02:01.931] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/activity/145" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:02:11.683] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:02:11.689] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:02:11.697] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:26:24.646] [ERROR] server - { [TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null] path: 'C:\\Users\\Administrator\\weiku\\views\\movie.ejs' }
+TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null
+    at eval (eval at <anonymous> (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:70:37)
+    at returnedFn (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (C:\Users\Administrator\weiku\node_modules\express\lib\view.js:126:8)
+    at tryRender (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (C:\Users\Administrator\weiku\node_modules\express\lib\response.js:961:7)
+    at C:\Users\Administrator\weiku\controllers\MovieController.js:69:17
+    at C:\Users\Administrator\weiku\models\Movie.js:63:9
+    at Query.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2139:28)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+    at process._tickDomainCallback (node.js:381:11)
+[2016-01-03 17:26:24.673] [ERROR] server - undefined - - "GET /movie/159 HTTP/1.1" 500 488 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:26:24.690] [ERROR] server - { [TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null] path: 'C:\\Users\\Administrator\\weiku\\views\\movie.ejs' }
+TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null
+    at eval (eval at <anonymous> (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:70:37)
+    at returnedFn (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (C:\Users\Administrator\weiku\node_modules\express\lib\view.js:126:8)
+    at tryRender (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (C:\Users\Administrator\weiku\node_modules\express\lib\response.js:961:7)
+    at C:\Users\Administrator\weiku\controllers\MovieController.js:69:17
+    at C:\Users\Administrator\weiku\models\Movie.js:63:9
+    at Query.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2139:28)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+    at process._tickDomainCallback (node.js:381:11)
+[2016-01-03 17:26:24.712] [ERROR] server - ::1 - - "GET /movie/159 HTTP/1.1" 500 488 "http://localhost/movie/159" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:26:43.157] [ERROR] server - { [TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null] path: 'C:\\Users\\Administrator\\weiku\\views\\movie.ejs' }
+TypeError: C:\Users\Administrator\weiku\views\movie.ejs:31
+    29|                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
+    30|                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
+ >> 31|                 <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+    32|                 <h6><strong>本站发布时间: </strong>
+    33|                 <%= data.date.toLocaleDateString() %>
+    34|                 </h6>
+
+Cannot read property 'name' of null
+    at eval (eval at <anonymous> (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:70:37)
+    at returnedFn (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (C:\Users\Administrator\weiku\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (C:\Users\Administrator\weiku\node_modules\express\lib\view.js:126:8)
+    at tryRender (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (C:\Users\Administrator\weiku\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (C:\Users\Administrator\weiku\node_modules\express\lib\response.js:961:7)
+    at C:\Users\Administrator\weiku\controllers\MovieController.js:69:17
+    at C:\Users\Administrator\weiku\models\Movie.js:63:9
+    at Query.<anonymous> (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2139:28)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:177:19
+    at C:\Users\Administrator\weiku\node_modules\mongoose\node_modules\kareem\index.js:109:16
+    at process._tickDomainCallback (node.js:381:11)
+[2016-01-03 17:26:43.165] [ERROR] server - ::1 - - "GET /movie/159 HTTP/1.1" 500 488 "http://localhost/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:29:28.736] [ERROR] server - ::1 - - "GET /movie/159 HTTP/1.1" 404 9 "http://localhost/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:31:24.754] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:24.766] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:24.779] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:31:37.961] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:37.968] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:37.984] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username?" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:31:40.326] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:40.332] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:40.356] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username?" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:31:56.292] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:56.294] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:31:56.302] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:32:09.950] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:09.952] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:09.958] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:32:14.797] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:14.800] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:14.806] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:32:22.204] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:22.208] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:22.212] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:32:47.077] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:47.079] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:47.087] [ERROR] server - ::1 - - "GET /uploads/avator1451212262893.jpg HTTP/1.1" 404 488 "http://localhost/user/username" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:32:47.199] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:47.201] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:32:47.204] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:48:02.889] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:48:02.894] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:48:02.901] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:53:31.980] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:53:31.985] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:53:32.001] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:54:56.742] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:54:56.747] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:54:56.759] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 17:57:23.905] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:57:23.911] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2016-01-03 17:57:23.921] [ERROR] server - ::1 - - "GET /comment/ HTTP/1.1" 404 488 "http://localhost/movie/160" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 18:05:46.593] [ERROR] server - ::1 - - "GET /movie/149 HTTP/1.1" 404 9 "http://localhost/addactivity/160" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 18:05:55.014] [ERROR] server - ::1 - - "GET /movie/149 HTTP/1.1" 404 9 "http://localhost/addactivity/160" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2016-01-03 18:06:01.228] [ERROR] server - ::1 - - "GET /movie/150 HTTP/1.1" 404 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"

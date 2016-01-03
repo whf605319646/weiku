@@ -20,12 +20,8 @@ exports.addOne = function (req, res, next) {
             location: xss(req.body.location),
             contacts: xss(req.body.contacts),
             rel_movie: xss(req.body.movieid),
-            ptcp_num: xss(req.body.ptcp_num),
-            organizer: {
-                uid: req.user.username,
-                nickname: req.user.nickname,
-                avator: req.user.avator
-            }
+            ptcp_num: xss(parseInt(req.body.ptcp_num,10)),
+            organizer: req.user.username    
         };
         if (formdata.theme.length>0 && /^\d+$/.test(formdata.rel_movie) && /\d{4}\-\d{1,2}\-\d{1,2}/.test(formdata.date)) {
             Activity.addOne(formdata, function (err, data){
@@ -33,7 +29,7 @@ exports.addOne = function (req, res, next) {
                     log.error(err);
                     res.status(500).send({status: false, info: '服务器内部错误'});
                 } else {
-                    res.send({status: true, info: '发布成功'});
+                    res.send({status: true, data: data});
                 }
             }); 
         } else {
@@ -49,8 +45,6 @@ exports.addParticipator = function (req, res, next) {
         var formdata = {
             acid: req.body.acid,
             uid: req.user.username,
-            nickname: req.user.nickname,
-            avator: req.user.avator
         };
 
         Activity.addParticipator(formdata, function (err, data) {
@@ -58,7 +52,7 @@ exports.addParticipator = function (req, res, next) {
                 log.error(err);
                 res.sendStatus(500);
             } else if(data.status) {
-                res.send({status: true, data: {uid: formdata.uid, nickname:formdata.nickname,avator: formdata.avator, num: data.rel_user.length}});
+                res.send({status: true, data: {uid: req.user.username, nickname:req.user.nickname,avator: req.user.avator, num: data.rel_user.length}});
             } else {
                 res.send({status: false, info: data.info});
             }

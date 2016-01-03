@@ -28,7 +28,7 @@
                 <h6><strong>导演:</strong> <a class="default-blue" href="javascript:void(0)"><%- data.director.join(',') %></a></h6>
                 <h6><strong>主演:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.actor.join(',') %></a></h6>
                 <h6><strong>影片时长(分钟):</strong> <%= data.duration %></h6>
-                <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.name %></a></h6>
+                <h6><strong>发布者:</strong> <a class="default-blue" href="javascript:void(0)"><%= data.publisher.nickname %></a></h6>
                 <h6><strong>本站发布时间: </strong>
                 <%= data.date.toLocaleDateString() %>
                 </h6>
@@ -97,9 +97,9 @@
                 <h5><i class="fi-comments">&nbsp;</i><strong>影片点评:&nbsp;<span class="success badge"><%=data.comments.length %></span></strong>&nbsp;&nbsp;<a href="javascript:void(0)" class="tiny secondary button" id="trigger-comment" <% if(user){%> data-toggle="comment-modal" <%}%>>写影评<i class="fi-pencil"></i></a></h5>
                 <% for(var i = 0; i<data.comments.length; i++) { %>
                     <li class="comment-item"> 
-                        <a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="/static/images/default_avator.jpg" alt=""/><%= data.comments[i].content.title %></a>
+                        <a href="javascript:void(0);" class="default-blue success callout"><img class="avator-small" src="<%=data.comments[i].rel_user.avator %>" alt=""/><%= data.comments[i].content.title %></a>
                         <h6>
-                        <a href="javascript:void(0)"><%= data.comments[i].rel_user.uid %></a>
+                        <a href="javascript:void(0)"><%= data.comments[i].rel_user.nickname %></a>
                             <small class="subheader">
                             &nbsp;发表于:
                             <%- data.comments[i].date.toLocaleDateString()%>&nbsp;<%- /\d{2}:\d{2}:\d{2}/.exec(data.comments[i].date.toTimeString())[0] %>

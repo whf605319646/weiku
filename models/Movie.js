@@ -15,19 +15,13 @@ var MovieSchema = new Schema({
     duration: {type: Number, default: 0},
     post_src: {type: String, default: '/static/images/default-poster.png'},
     play_src: String,
-    publisher: {
-        uid: String,
-        name: String
-    },
+    publisher: {type: String, ref: 'User'},
     date: {type: Date, default: Date.now},
     like: Array,
     dislike: Array,
     comments: [
         {
-            rel_user: {
-                uid: String,
-                name: String
-            },
+            rel_user: {type: String, ref: 'User'},
             content: {
                 title: String,
                 detail: String
@@ -59,7 +53,13 @@ MovieDAO.prototype.addOne = function (data, callback) {
 // 通过id查找
 MovieDAO.prototype.findById = function (movieid, callback) {
     'use strict';
-    Movie.findOne({movieid: movieid}, function (err, obj) {
+    var opt = [
+        {path: 'publisher', select:{username:1,nickname:1,avator: 1, _id:0}},
+        {path: 'comments.rel_user', select:{username:1,nickname:1,avator: 1, _id:0}}
+    ];
+    Movie.findOne({movieid: movieid})
+    .populate(opt)
+    .exec(function (err, obj) {
         callback(err, obj);
     });
 };

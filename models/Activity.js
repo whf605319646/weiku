@@ -10,21 +10,12 @@ var ActivitySchema = new Schema({
     date: String,
     content: String,
     location: String,
-    organizer: {
-        uid: {type: String, required: true},
-        nickname: String,
-        avator: String
-    },
+    // 这里必须设置User的_id值和username统一，因为populate只关联_id
+    organizer: {type: String, required: true, ref: 'User'},
     contacts: String,
-    rel_user: [
-        {
-            uid: {type: String, required: true},
-            nickname: String,
-            avator: String
-        }
-    ],
+    rel_user: [{type: String, ref: 'User'}],
     rel_movie: Number,
-    pctp_num: {type: Number, default: 100}
+    ptcp_num: {type: Number, default: 100}
 });
 
 // 自增插件的使用
@@ -46,15 +37,21 @@ ActivityDAO.prototype.addOne = function (data, callback) {
     });
 };
 
-// 通过查询用户参与过的所有活动
+// 通过查询用户发布过的所有活动
 ActivityDAO.prototype.findByUser = function (uid, callback) {
     'use strict';
-    Activity.find({'organizer.uid': uid}).sort({acid: -1}).exec(callback);
+    Activity.find({'organizer': uid}).sort({acid: -1}).exec(callback);
 };
 
 ActivityDAO.prototype.findById = function (id, callback) {
     'use strict';
-    Activity.findOne({'acid': id}).exec(callback);
+    var opt = [
+        {path: 'organizer',select:{username:1,nickname:1,avator: 1, _id:0}},
+        {path: 'rel_user', select:{username:1,nickname:1,avator: 1, _id:0}}
+    ];
+    Activity.findOne({'acid': id})
+    .populate(opt)
+    .exec(callback);
 };
 
 ActivityDAO.prototype.findByMovieId = function (id, callback) {
@@ -78,12 +75,12 @@ ActivityDAO.prototype.addParticipator = function (data, callback) {
 
                 // 遍历一遍参与者看是否重复
                 activity.rel_user.forEach(function (ele) {
-                    if (data.uid === ele.uid) {
+                    if (data.uid === ele) {
                         noDuplicate = false;
                     }
                 });
                 if (noDuplicate) {
-                    activity.rel_user.push(data);
+                    activity.rel_user.push(data.uid);
                     activity.save(function (err, newobj) {
                         newobj.status = true;
                         callback(err, newobj);
@@ -106,7 +103,7 @@ ActivityDAO.prototype.deleteActivity = function (data, callback) {
         if (err) {
             callback(err, activity);
         } else if(activity) {
-            if (data.uid === activity.organizer.uid) {
+            if (data.uid === activity.organizer) {
                 activity.remove(function (err) {
                     callback(err, {status: true});
                 });

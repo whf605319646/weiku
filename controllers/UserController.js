@@ -60,7 +60,11 @@ exports.addUser = function (req, res, next) {
         return res.send({status: false, info: '密码长度太短'});
     } 
 
-    User.register(new User({username: req.body.username}), req.body.password, function (err, user) {
+    User.register(new User({
+            username: req.body.username, 
+            _id: req.body.username, 
+            nickname: req.body.username
+        }), req.body.password, function (err, user) {
         if (err) {
             log.error(err);
             return res.send({status: false, info: '用户名已被使用'});
