@@ -3,6 +3,7 @@
 <head>
      <% include head %>
      <title>电影 - <%= data.title %></title>
+     <link rel="stylesheet" href="/static/addon/slimscrol/prettify/prettify.css">
 </head>
 <body>
 <% include header %>
@@ -43,8 +44,9 @@
                 <!-- JiaThis Button 结束 -->
             </section>
 
-            <section class="media-object-section medium-3 large-3 columns callout activity-list">
-                <h5 class="">相关活动</h5><a href="javascript:void(0)" class="button tiny secondary">发布活动</a>
+            <section class="media-object-section medium-3 large-3 columns callout">
+                <h5>相关活动</h5><a href="javascript:void(0)" class="button tiny secondary publish-actv">发布活动</a>
+                <div class="activity-list"></div>
             </section>
         </div>
     </div>
@@ -137,6 +139,7 @@
     
 <% include footer %>
 <% include script %>
+    <script src="/static/addon/slimscrol/jquery.slimscroll.min.js"></script>
     <script src="/static/js/movie.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/static/js/chat.js"></script>

@@ -9031,3 +9031,768 @@ Error: Not Found
     at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
     at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
 [2015-12-29 20:59:09.663] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:41:41.502] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:41:41.512] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:41:41.522] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:48:55.901] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:48:55.911] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:48:55.920] [ERROR] server - ::1 - - "GET /static/js/addon/slimscrol/jquery.slimscroll.min.js HTTP/1.1" 404 488 "http://localhost/movie/151" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:49:00.987] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:49:00.994] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:49:01.003] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:50:33.141] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:50:33.146] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:50:33.153] [ERROR] server - ::1 - - "GET /static/js/addon/slimscrol/jquery.slimscroll.min.js HTTP/1.1" 404 488 "http://localhost/movie/151" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:50:35.988] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:50:35.993] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:50:36.001] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:53:18.683] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:53:18.690] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:53:18.701] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 22:57:00.718] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:57:00.725] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 22:57:00.735] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:00:10.068] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:00:10.076] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:00:10.085] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:01:29.736] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:01:29.749] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:01:29.767] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:04:20.746] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:04:20.752] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:04:20.760] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:04:50.077] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:04:50.082] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:04:50.100] [ERROR] server - ::1 - - "GET /public/images/default_avator.jpg HTTP/1.1" 404 488 "http://localhost/activity/139" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:09:06.626] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:09:06.633] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:09:06.643] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:10:07.154] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:10:07.163] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:10:07.176] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:10.098] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:10.105] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:10.115] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:13.475] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:13.483] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:13.494] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:16.618] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:16.624] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:16.637] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:18.058] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:18.064] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:18.074] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:20.199] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:20.204] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:20.218] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:25.179] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:25.184] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:25.198] [ERROR] server - { [CastError: Cast to number failed for value "NaN" at path "acid"]
+  message: 'Cast to number failed for value "NaN" at path "acid"',
+  name: 'CastError',
+  kind: 'number',
+  value: NaN,
+  path: 'acid',
+  reason: undefined }
+CastError: Cast to number failed for value "NaN" at path "acid"
+    at MongooseError.CastError (C:\Users\Administrator\weiku\node_modules\mongoose\lib\error\cast.js:19:11)
+    at SchemaNumber.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\number.js:221:9)
+    at SchemaNumber.castForQuery (C:\Users\Administrator\weiku\node_modules\mongoose\lib\schema\number.js:267:16)
+    at module.exports (C:\Users\Administrator\weiku\node_modules\mongoose\lib\cast.js:205:32)
+    at Query.cast (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2532:10)
+    at Query.findOne (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:1238:10)
+    at C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2133:21
+    at new Promise.ES6 (C:\Users\Administrator\weiku\node_modules\mongoose\lib\promise.js:45:3)
+    at Query.exec (C:\Users\Administrator\weiku\node_modules\mongoose\lib\query.js:2126:10)
+    at ActivityDAO.findById (C:\Users\Administrator\weiku\models\Activity.js:57:36)
+    at exports.findById (C:\Users\Administrator\weiku\controllers\ActivityController.js:107:14)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (C:\Users\Administrator\weiku\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:277:22
+[2015-12-30 23:11:25.231] [ERROR] server - ::1 - - "GET /public/images/default_avator.jpg HTTP/1.1" 404 488 "http://localhost/activity/137" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:25.232] [ERROR] server - ::1 - - "GET /activity/avator1449738548535.jpg HTTP/1.1" 404 9 "http://localhost/activity/137" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+[2015-12-30 23:11:43.026] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:43.031] [ERROR] server - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at C:\Users\Administrator\weiku\server.js:172:15
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at Domain.next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at Domain.run (domain.js:197:16)
+    at C:\Users\Administrator\weiku\server.js:151:7
+    at Layer.handle [as handle_request] (C:\Users\Administrator\weiku\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:312:13)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:280:7
+    at Function.process_params (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:330:12)
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:271:10)
+    at C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:618:15
+    at next (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:256:14)
+    at Function.handle (C:\Users\Administrator\weiku\node_modules\express\lib\router\index.js:176:3)
+[2015-12-30 23:11:43.038] [ERROR] server - ::1 - - "GET /static/foundation/js/vendor/jquery.min.map HTTP/1.1" 404 488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"

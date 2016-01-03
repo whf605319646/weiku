@@ -6,7 +6,7 @@ $(function () {
         this.movieid = $('#c-mid').val();
         this.triggerComment = $('#trigger-comment');
         this.chatField = $('.inputMessage');
-        this.publishActv = $('.activity-list >a');
+        this.publishActv = $('.publish-actv');
         this.likeBtn = $('#like-movie');
         this.disLikeBtn = $('#dislike-movie');
         this.addCommentForm = $('#add-comment-form');
@@ -20,6 +20,15 @@ $(function () {
         });
     };
 
+    Movie.prototype.initScrollBar = function () {
+        // 使用第三方插件slimscroll
+        $('.chat-bg aside').slimscroll({
+            height: '85%'
+        });
+        this.activityList.slimscroll({
+            height: '280px'
+        });
+    };
     // 事件绑定
     Movie.prototype.bindEvent = function () {
         var that = this;
@@ -138,6 +147,7 @@ $(function () {
         this.getActivity();
         this.setLocalStorage();
         this.initCommentForm();
+        this.initScrollBar();
     };
 
     var moviePage = new Movie();

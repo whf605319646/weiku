@@ -33,8 +33,8 @@ body,html {
 }
 
 .activity-list {
-    height: 350px;
-    overflow-y: auto;
+    /*height: 350px;
+    overflow-y: auto;*/
     overflow-x: hidden; 
 }
 .chat-bg {
@@ -45,7 +45,6 @@ body,html {
     padding-right: 1rem;
     padding-left: 1rem;
     min-height: 250px;
-    overflow-y: auto;
     overflow-x: hidden; 
 }
 
