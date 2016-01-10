@@ -5,12 +5,11 @@ var xss = require('xss');
 
 
 exports.addOne = function (req, res, next) {
-
     var formdata = {
         title: xss(req.body.title),
         type: xss(req.body.type),
-        actor: xss(req.body.actor).split(','),
-        director: xss(req.body.director).split(','),
+        actor: xss(req.body.actor).split('|'),
+        director: xss(req.body.director).split('|'),
         detail: xss(req.body.detail),
         duration: xss(req.body.duration),
         post_src: xss(req.body.post_src),
@@ -92,12 +91,12 @@ exports.findAll = function (req, res, next) {
         if (err) {
             log.error(err);
             res.send({status: false});
-        }
-        else {    
+        } else {    
             res.render('index', {status: true, data: data, user: req.user});
         }
     });  
 };
+
  
 // 电影分类
 exports.classify = function (req, res, next) {

@@ -20,7 +20,7 @@
                 <li><a href="/category?type=搞笑">搞笑</a></li>
                 <li><a href="/category?type=创意">创意</a></li>
                 <li><a href="/category?type=人生">人生</a></li>
-                <li><a href="/category?type=广告">广告</a></li>
+                <li><a href="/category?type=科幻">科幻</a></li>
             </ul>
         </section>
 
@@ -73,7 +73,7 @@
         </button>
         <div class="row">
             <h5 class="float-center">新用户注册</h5>
-            <form action="#" method="post" role="form">
+            <form id="register-form" method="post" role="form">
                 <div class="input-group">
                     <span class="input-group-label">用户名</span>
                     <input class="input-group-field reg-name" type="text" name="username" placeholder="请设置用户名">
@@ -85,6 +85,10 @@
                 <div class="input-group">
                     <span class="input-group-label">密码</span>
                     <input class="input-group-field reg-psw-again" type="password"  placeholder="请再次输入密码">
+                </div>
+                <div class="input-group">
+                    <input type="radio" value="man" name="gender" id="reg-man" checked> <label for="reg-man">男</label>
+                    <input type="radio" value="woman" name="gender" id="reg-woman"> <label for="reg-woman">女</label>
                 </div>
                 <p class="form-error is-visible register-tip"></p>
                 <span class="float-left"><small class="subheader">已有账户?&nbsp;</small><a href="#" class="default-blue" data-toggle="login-modal">去登录</a></span>

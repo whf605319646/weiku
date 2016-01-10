@@ -16,6 +16,13 @@ $(function () {
                 detail: $('#add-movie textarea[name="detail"]').val(),
                 _csrf: $('#add-movie input[name="_csrf"]').val()
             };
+
+            if (data.actor) {
+                data.actor = data.actor.split('|');
+            } 
+            if (data.director) {
+                data.director = data.director.split('|');
+            }
             $('#add-movie').fileUpload('/doMovieAdd', data, function (res) {
                 if (res && !res.status) {
                     $('.tip').html(res.info);

@@ -61,24 +61,23 @@ exports.addUser = function (req, res, next) {
     } 
 
     User.register(new User({
-            username: req.body.username, 
             _id: req.body.username, 
-            nickname: req.body.username
+            username: req.body.username, 
+            nickname: req.body.username,
+            gender: req.body.gender
         }), req.body.password, function (err, user) {
-        if (err) {
-            log.error(err);
-            return res.send({status: false, info: '用户名已被使用'});
-        } 
-        passport.authenticate('local')(req, res, function () {
-            req.session.save(function (err) {
-                if (err) {
-                    log.error(err);
-                    return next(err);
-                }
-                res.send({status: true});
+            if (err) {
+                return res.send({status: false, info: '用户名已被使用'});
+            } 
+            passport.authenticate('local')(req, res, function () {
+                req.session.save(function (err) {
+                    if (err) {
+                        log.error(err);
+                        return next(err);
+                    }
+                    res.send({status: true});
+                });
             });
-        });
-
     });
 };
 

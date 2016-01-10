@@ -9,7 +9,7 @@
     <div class="row">
         <section class="columns small-12 medium-7">
             <h5 class="text-center">基本资料</h5>
-            <form role="form">
+            <form role="form" id="basic-info">
                 <div class="row">
                     <div class="small-3 columns">
                         <label for="username" class="text-right"><strong>用户名:</strong></label>
@@ -28,31 +28,28 @@
                 </div>
                 <div class="row">
                     <div class="small-3 columns">
+                        <label for="password" class="text-right"><strong>性别:</strong></label>
+                    </div>
+                    <div class="small-9 columns">
+                          <input type="radio" value="man" name="gender" id="radio-man" <% if (userdata.gender == "man"){%>checked<% }%>> <label for="radio-man">男</label>
+                          <input type="radio" value="woman" name="gender" id="radio-woman" <% if (userdata.gender == "woman"){%>checked<% }%>> <label for="radio-woman">女</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-3 columns">
                         <label for="avator-input" class="text-right"><strong>头像:</strong><br>(<a href="javascript:void(0)" data-toggle="avator-modal">更换</a>)</label>
                     </div>
                     <div class="small-9 columns">
                       <img src="<%= userdata.avator %>" class="avator-large" alt="头像加载失败">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="small-4 medium-3 columns">
-                        <label for="password" class="text-right"><strong>登录密码:</strong></label>
-                    </div>
-                    <div class="small-8 medium-9 columns">
-                      <p><a href="javascript:void(0)" data-toggle="change-psw">修改</a></p>
-                        <div class="callout dropdown-pane" id="change-psw" data-dropdown data-animate="hinge-in-from-top hinge-out-from-bottom">
-                          <input type="password" placeholder="输入新密码">
-                          <input type="password" placeholder="再次输入新密码">
-                        </div>
-                    </div>
-                </div>
+            </form>
                 <div class="row">
                     <div class="small-6 medium-5 small-offset-4 medium-offset-5 columns">
                         <button class="button tiny update-info">更新设置</button>
                         <p class="form-error is-visible update-info-tip"></p>
                     </div>
                 </div>
-            </form>
             <div class="row">
                 <hr>
                 <!-- 我的电影 -->
@@ -93,7 +90,7 @@
         <input type="submit" value="uploadavator">
     </form> -->
     <% include script %>
-    <script src="/static/js/upload.js"></script>
-    <script src="/static/js/user.js"></script>
+    <script src="/static/js/asset/upload.js"></script>
+    <script src="/static/js/asset/user.js"></script>
 </body>
 </html>

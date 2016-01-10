@@ -67,7 +67,7 @@ MovieDAO.prototype.findById = function (movieid, callback) {
 // 查找用户相关发布过的电影
 MovieDAO.prototype.findByUser = function (uid, callback) {
     'use strict';
-    Movie.find({'publisher.uid': uid}).sort({movieid: -1}).exec(callback);
+    Movie.find({'publisher': uid}).sort({movieid: -1}).exec(callback);
 };
 
 // 查找该分类的电影，按movieid倒序排列

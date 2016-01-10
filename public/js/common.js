@@ -29,7 +29,7 @@ $(function(){
                 $('.login-tip').html('密码长度不得小于6!');
             } else {
                 $.post('/user', {username: name, password: password}, function (res, status) {
-                    if (status == 'error') {
+                    if (status == 'error' || status == 'timeout') {
                         $('.login-tip').html('用户名或密码错误!')
                     }
                     else if(res.status) {
@@ -67,6 +67,7 @@ $(function(){
             var reg_name = $('.reg-name').val();
             var reg_psw = $('.reg-psw').val();
             var reg_psw_again = $('.reg-psw-again').val();
+            var gender = $('#register-form input[name="gender"]:checked').val();
 
             if (reg_name == '' || reg_psw.length == 0) {
                 $('.register-tip').html('用户名和密码不能为空');
@@ -80,7 +81,7 @@ $(function(){
                 $('.register-tip').html('密码前后不一致');
                 return false;
             }
-            $.post('/user/authenticate/register',{username: reg_name,password: reg_psw}, function (res) {
+            $.post('/user/authenticate/register',{username: reg_name, password: reg_psw, gender: gender}, function (res) {
                 if (res.status) {
                     // location.href='/user/'+ reg_name;
                      $('#login-modal').foundation('open');

@@ -28,6 +28,8 @@ $(function () {
                     return;
                 }
             };
+
+            data.ptcp_num = data.ptcp_num ||100;
             $.post('/doActivityAdd', data, function (res) {
                 if (res.status) {
                     $('input').val('');

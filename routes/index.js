@@ -42,7 +42,6 @@ var judgeState = function (req, res) {
 
 /* GET home page. */
 router.get('/', movie.findAll);
-
 /*About Movies page*/
 router.get('/movie/:id', movie.findMovieById);
 router.get('/category', movie.classify);

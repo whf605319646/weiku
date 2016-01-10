@@ -48,12 +48,15 @@ $(function () {
         var that = this;
         this.updateInfo.on('click', function () {
             var nickname = $('#nickname-input').val();
+            var gender = $('#basic-info input[name="gender"]:checked').val();
             if (nickname.length < 1) {
                 return ;
             }
-            $.post('/user/update/info', {nickname: nickname} ,function (res) {
+            $.post('/user/update/info', {nickname: nickname, gender: gender} ,function (res) {
                 if (!res.status) {
                     $('.update-info-tip').html('修改信息失败');
+                } else {
+                    alert('更新成功')
                 }
             });
         });

@@ -19,10 +19,10 @@
                     <input id="radio4" type="radio" name="type" value="搞笑"><label for="radio4">搞笑</label>
                     <input id="radio5" type="radio" name="type" value="创意"><label for="radio5">创意</label>
                     <input id="radio6" type="radio" name="type" value="人生"><label for="radio6">人生</label>
-                    <input id="radio7" type="radio" name="type" value="广告"><label for="radio7">广告</label>
+                    <input id="radio7" type="radio" name="type" value="科幻"><label for="radio7">科幻</label>
                 </fieldset>
-                <input type="text" name="actor" placeholder="输入演员，以逗号分隔">
-                <input type="text" name="director" placeholder="输入导演，以逗号分隔">
+                <input type="text" name="director" placeholder="导演，以 | 分隔">
+                <input type="text" name="actor" placeholder="主演，以 | 分隔">
                 <fieldset class="fieldset">
                     <legend>电影时长(以分钟计)</legend>
                     <div class="small-8 medium-10 columns">
@@ -35,7 +35,7 @@
                         <input type="number" name="duration" value="6" max="150" id="duration-slider">
                     </div>
                 </fieldset>
-                <input type="text" name="play_src" placeholder="播放地址" required>
+                <input type="text" name="play_src" placeholder="第三方播放器地址" required>
                 <input type="text" name="post_src" placeholder="海报地址">
                 <fieldset class="fieldset">
                     <legend>上传海报(可选)</legend>
@@ -50,7 +50,7 @@
     </div>
     <% include footer %>
     <% include script %>
-    <script src="/static/js/upload.js"></script>
-    <script src="/static/js/movie-add.js"></script>
+    <script src="/static/js/asset/upload.js"></script>
+    <script src="/static/js/asset/movie-add.js"></script>
 </body>
 </html>

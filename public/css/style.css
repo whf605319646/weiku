@@ -90,9 +90,13 @@ body,html {
 }
 
 #loading img {
-    margin-top: 50%;
+    margin-top: 30%;
     margin-left: 50%;
     position: relative;
     top:-62px;
     left:-62px;
+}
+.slider-poster img {
+    max-height: 30rem;
+    width: 100%;
 }

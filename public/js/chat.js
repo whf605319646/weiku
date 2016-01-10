@@ -28,13 +28,14 @@ $(function () {
     });
     socket.on('new message', function (msg) {
         $('.messages').append('<div class="row">'+
-                                    '<div class="columns small-1">'+
-                                        '<img src="'+msg.user.avator+'"  class="avator-small img-radius">'+
-                                    '</div>'+
-                                    '<div class="columns small-11 medium-10">'+
-                                        '<small class="subheader">'+msg.user.name+'</small><p><span class="msg-item">'+msg.text+'</span></p>'+
-                                    '</div>'+
-                                '</div>');
+                            '<div class="columns small-1">'+
+                                '<img src="'+msg.user.avator+'"  class="avator-small img-radius">'+
+                            '</div>'+
+                            '<div class="columns small-11 medium-10">'+
+                                '<small class="subheader">'+msg.user.name+'</small><p><span class="msg-item">'+
+                            msg.text+'</span></p>'+
+                            '</div>'+
+                        '</div>');
         // 滚动条滚动到底部
         scrollToBottom();
     });

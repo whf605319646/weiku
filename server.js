@@ -10,6 +10,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var domain = require('domain');
 var log4js = require('log4js');
+var flash = require('connect-flash');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -34,6 +35,7 @@ app.use(cookieParser());
 app.use(sessionConfig);
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(flash());
 
 // uncomment after placing your favicon in /public
 app.use('/static',express.static(path.join(__dirname, 'public')));
@@ -196,16 +198,16 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
     'use strict';
-    if (err.code !== 'EBADCSRFTOKEN') {
+    if (err.code == 'EBADCSRFTOKEN') {
         log.error(err);
-        res.status(err.status || 500);
+        res.status(403);
         res.render('error', {
             message: '存在CSRF令牌错误',
             error: {}
         });
     } else {
         log.error(err);
-        res.status(403).render('error', {
+        res.status(err.status).render('error', {
             message: err.message,
             error: {}
         });
