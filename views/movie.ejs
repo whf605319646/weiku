@@ -15,7 +15,7 @@
                 </div>
             </section>
             <section class="media-object-section medium-6 large-6 columns">
-                <h3><%= data.title %></h3>
+                <h3><strong><%= data.title %></strong></h3>
                 <h5>
                     <div class="small-5 columns" id="like-movie" style="cursor:pointer;">
                         <i class="default-primary fi-like"></i> <span><%= data.like.length %></span>
@@ -54,10 +54,15 @@
     <!-- 播放插件 -->
     <div class="row">
         <div class="media-object" data-equalizer>
-            <section class="flex-video widescreen media-object-section medium-9 large-9 show-for-medium columns" data-equalizer-watch>
+           <!-- <section class="flex-video widescreen media-object-section medium-9 large-9 show-for-medium columns" data-equalizer-watch>
                 <iframe src="<%= data.play_src %>" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </section>
-
+            </section>  -->
+            <!-- 剧情介绍 -->
+            <section class="media-object-section medium-9 large-9 columns" data-equalizer-watch>
+                <h5><strong>剧情描述:</strong></h5>
+                <p><%= data.detail %><span>......</span></p>
+            </section> 
+            <!-- 剧情介绍结束 -->
             <!-- 聊天室 -->
              <section class="media-object-section medium-3 large-3 columns chat-bg" data-equalizer-watch>
                 <h6 class="expanded row" style="background-color:#000;color:#fff;opacity:0.8;">在线人数：<span class="online-num"></span></h6>
@@ -67,8 +72,8 @@
                         </div>
                     </div>
                 </aside>
-                <div class="column row input-group chat-input-bar">
-                    <input type="text" class="inputMessage input-group-field" placeholder="按回车键发送" />
+                <div class="input-group chat-input-bar">
+                    <input type="text" class="input-group-field inputMessage" placeholder="按回车键发送" />
                     <div class="input-group-button show-for-small-only">
                         <input type="button" class="button chat-btn" value="发表">
                     </div>
@@ -79,14 +84,14 @@
     </div>
     <!-- 播放插件结束 -->
 
-    <hr>
+    <!-- <hr> -->
     <!-- 剧情介绍 -->
-    <div class="row">
+    <!-- <div class="row">
         <div class="columns">
             <h5><strong>剧情描述:</strong></h5>
             <p><%= data.detail %><span>......</span></p>
         </div>
-    </div>
+    </div> -->
     <!-- 剧情介绍结束 -->
 
     <!-- 影评 -->
@@ -129,7 +134,7 @@
                 <input type="hidden" name="movieid" id="c-mid" value=<%= data.movieid %>>
                 <br>
                 <textarea name="detail" cols="30" rows="10"></textarea>
-                <input type="hidden" name="_csrf">
+             <!--    <input type="hidden" name="_csrf"> -->
                 <p class="form-error is-visible comment-tip"></p>
             </form>
             <button class="button tiny comment-btn">提交</button>

@@ -24,13 +24,13 @@ exports.addOne = function (req, res, next) {
             organizer: req.user.username    
         };
         if (formdata.theme.length>0 && /^\d+$/.test(formdata.rel_movie) && /\d{4}\-\d{1,2}\-\d{1,2}/.test(formdata.date)) {
-            Activity.addOne(formdata, function (err, data){
-                if (err){
-                    log.error(err);
-                    res.status(500).send({status: false, info: '服务器内部错误'});
-                } else {
-                    res.send({status: true, data: data});
-                }
+            Activity.addOne(formdata)
+            .then(function (data){
+                res.send({status: true, data: data});
+            })
+            .catch(function (err) {
+                log.error(err);
+                res.status(500).send({status: false, info: '服务器内部错误'});
             }); 
         } else {
             res.status(200).send({status: false, info: '数据格式错误'});
@@ -47,15 +47,17 @@ exports.addParticipator = function (req, res, next) {
             uid: req.user.username,
         };
 
-        Activity.addParticipator(formdata, function (err, data) {
-            if (err) {
-                log.error(err);
-                res.sendStatus(500);
-            } else if(data.status) {
+        Activity.addParticipator(formdata)
+        .then(function (data) {
+            if(data.status) {
                 res.send({status: true, data: {uid: req.user.username, nickname:req.user.nickname,avator: req.user.avator, num: data.rel_user.length}});
             } else {
                 res.send({status: false, info: data.info});
             }
+        })
+        .catch(function (err) {
+            log.error(err);
+            res.sendStatus(500);
         });
     }
 };
@@ -68,15 +70,17 @@ exports.deleteActivity = function (req, res, next) {
             uid: req.user.username,
             acid: req.body.acid
         };
-        Activity.deleteActivity(formdata, function (err, data) {
-            if (err) {
-                log.error(err);
-                res.status(500).send({status: false, info: '服务器内部错误'});
-            } else if(data.status) {
+        Activity.deleteActivity(formdata)
+        .then(function (data) {
+            if(data.status) {
                 res.send({status: true, info: '删除成功'});
             } else {
                 res.send(data);
             }
+        })
+        .catch(function (err) {
+            log.error(err);
+            res.status(500).send({status: false, info: '服务器内部错误'});
         });
     }
 };
@@ -86,35 +90,35 @@ exports.findByUser = function (req, res, next) {
     if (!req.user) {
         res.send({status: false, info: '未登录'});
     } else {
-        Activity.findByUser(req.user.username, function (err, data) {
-            if (err) {
-                log.error(err);
-                res.send({status: false, info: '服务器内部错误'});
-            } else {
-                res.send({status: true, activity_data: data});
-            }
+        Activity.findByUser(req.user.username)
+        .then(function (data) {
+            res.send({status: true, activity_data: data});
+        })
+        .catch(function (err) {
+            log.error(err);
+            res.send({status: false, info: '服务器内部错误'});
         });
     }
 };
 
 exports.findById = function (req, res, next) {
-    Activity.findById(parseInt(req.params.id,10), function (err, data) {
-        if (err) {
-            log.error(err);
-            res.sendStatus(404);
-        } else {
-            res.render('activity', {status: true, activity_data: data, user: req.user});
-        }
+    Activity.findById(parseInt(req.params.id,10))
+    .then(function (data) {
+        res.render('activity', {status: true, activity_data: data, user: req.user});
+    })
+    .catch(function (err) {
+        log.error(err);
+        res.sendStatus(404);
     });
 };
 
 exports.findByMovieId = function (req, res, next) {
-    Activity.findByMovieId(req.body.movieid, function (err, data) {
-        if (err) {
-            log.error(err);
-            res.status(500).send();
-        } else {
-            res.send({status: true,rel_actv: data});
-        }
+    Activity.findByMovieId(req.body.movieid)
+    .then(function (data) {
+        res.send({status: true,rel_actv: data});
+    })
+    .catch(function (err) {
+        log.error(err);
+        res.status(500).send();
     });
 };

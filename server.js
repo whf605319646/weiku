@@ -169,13 +169,13 @@ app.use(function (req, res, next) {
 
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    'use strict';
-    var err = new Error('Not Found');
-    err.status = 404;
-    log.error(err);
-    next(err);
-});
+// app.use(function (req, res, next) {
+//     'use strict';
+//     var err = new Error('Not Found');
+//     err.status = 404;
+//     log.error(err);
+//     next(err);
+// });
 
 /**
  * error handlers

@@ -1,7 +1,8 @@
-var Movie = require('../models/Movie');
 var log = require('log4js').getLogger("server");
 var passport = require('passport');
 var xss = require('xss');
+var Promise = require('bluebird');
+var Movie = require('../models/Movie');
 
 
 exports.addOne = function (req, res, next) {
@@ -27,25 +28,26 @@ exports.addOne = function (req, res, next) {
         // 如果有用户上传文件
         if (req.file) {
             formdata.post_src = '/uploads/'+req.file.filename;
-            Movie.addOne(formdata, function (err, data) {
-                if (err){
-                    log.error(err);
-                    res.status(500).send({status: false, info: '服务器内部错误'});
-                } else {
-                    // 如果新增成功，重定向到新电影主页
-                    res.send({status: true, movieid: data.movieid});
-                }
+            Movie.addOne(formdata)
+            .then(function (data) {
+                // 如果新增成功，重定向到新电影主页
+                res.send({status: true, movieid: data.movieid});
+            })
+            .catch(function (err) {
+                log.error(err);
+                res.status(500).send({status: false, info: '服务器内部错误'});
             });
         } else {//否则
-            Movie.addOne(formdata, function (err,data) {
-                if (err){
-                    log.error(err);
-                    res.status(500).send({status: false, info: '服务器内部错误'});
-                } else {
-                    // 如果新增成功，重定向到新电影主页
-                    res.send({status: true, movieid: data.movieid});
-                }
-            });
+            Movie.addOne(formdata)
+            .then(function (data) {
+                // 如果新增成功，重定向到新电影主页
+                res.send({status: true, movieid: data.movieid});
+                
+            })
+            .catch(function (err) {
+                log.error(err);
+                res.status(500).send({status: false, info: '服务器内部错误'});
+            });;
         }
     }
 };
@@ -59,15 +61,16 @@ exports.findMovieById = function (req, res, next) {
     if (!/^\d+$/.test(req.params.id)) {
         return res.status(404).send();
     }
-    Movie.findById(req.params.id, function (err, data){
-        if (err) {
-            log.error(err);
-            res.sendStatus(500);
-        } else if (data){
+    Movie.findById(req.params.id)
+    .then(function (data){
+        if (data){
             res.render('movie', {status: true, data: data, user: req.user});
         } else {
             res.sendStatus(404);
         }
+    }).catch(function (err) {
+        log.error(err);
+        res.sendStatus(500);
     });
 };
 
@@ -75,25 +78,25 @@ exports.findByUser = function (req, res, next) {
     if (!req.user) {
         res.send({status: false, info: '未登录'});
     } else {
-        Movie.findByUser(req.user.username, function (err, data) {
-            if (err) {
-                log.error(err);
-                return next(err);
-            } else {
-                res.send({status: true, movie_data: data});
-            }
+        Movie.findByUser(req.user.username)
+        .then(function (data) {
+            res.send({status: true, movie_data: data});
+        })
+        .catch(function (err) {
+             log.error(err);
+            return next(err);
         });
     }
 };
 
 exports.findAll = function (req, res, next) {
-    Movie.findAllDesc(function (err, data){
-        if (err) {
-            log.error(err);
-            res.send({status: false});
-        } else {    
+    Movie.findAllDesc()
+    .then(function (data){  
             res.render('index', {status: true, data: data, user: req.user});
-        }
+    })
+    .catch (function (err) {
+        log.error(err);
+        res.send({status: false});
     });  
 };
 
@@ -104,13 +107,14 @@ exports.classify = function (req, res, next) {
 };
 
 exports.findByType = function (req, res, next) {
-    Movie.findByType(req.body.type, function (err, data) {
-        if (err) {
-            log.error(err);
-            next(err);
-        } else {
-            res.send({status: true, data: data});
-        }
+    Movie.findByType(req.body.type)
+    .then(function (data) {
+        res.send({status: true, data: data});
+        
+    })
+    .catch(function (err) {
+         log.error(err);
+        return next(err);
     });
 };
 
@@ -120,13 +124,14 @@ exports.search = function (req, res, next) {
 // 搜索
 exports.doSearch = function (req, res, next) {
 
-    Movie.findByTitle(req.body.search, function (err, data) {
-        if (err) {
-            log.error(err);
-            next(err);
-        } else {
-            res.send({status: true, data: data});
-        } 
+    Movie.findByTitle(req.body.search)
+    .then(function (data) {
+        res.send({status: true, data: data});
+        
+    })
+    .catch(function (err) {
+        log.error(err);
+        next(err);
     });
 };
 
@@ -152,14 +157,15 @@ exports.addComment = function (req, res, next) {
             movieid: xss(req.body.movieid)
         };
 
-        Movie.addComment(formdata, function (err, data) {
-            if (err) {
-                log.error(err);
-                res.status(500).send({status: false, info: '服务器内部错误'});
-            } else {
-                formdata.avator = req.user.avator;
-                res.send({status: true, data: formdata});
-            }
+        Movie.addComment(formdata)
+        .then(function (data) {
+            formdata.avator = req.user.avator;
+            res.send({status: true, data: formdata});
+            
+        })
+        .catch(function (err) { 
+            log.error(err);
+            res.status(500).send({status: false, info: '服务器内部错误'});
         });
     }
 };
@@ -173,12 +179,9 @@ exports.dislike = function (req, res, next) {
     if (!formdata.uid || !/^\d+$/.test(formdata.movieid)) {
         res.send({status: false, info: '电影id出错'});
     } else {
-        Movie.dislikeMovie(formdata, function (err,data) {
-            if (err) {
-                log.error(err);
-                res.status(500).end();
-                return ;
-            } else if (data) {
+        Movie.dislikeMovie(formdata)
+        .then(function (data) {
+            if (data) {
                 var returndata = {};
                 if (data.duplicate) {
                     returndata.info = '您已经评论过';
@@ -189,6 +192,10 @@ exports.dislike = function (req, res, next) {
                 }
                 res.send(returndata);
             }
+        })
+        .catch(function (err) {
+            log.error(err);
+            res.status(500).end();
         });
     }
 };
@@ -202,12 +209,9 @@ exports.like = function (req, res, next) {
     if (!formdata.uid || !/^\d+$/.test(formdata.movieid)) {
         res.send({status: false, info: '电影id出错'});
     } else {
-        Movie.likeMovie(formdata, function (err,data) {
-            if (err) {
-                log.error(err);
-                res.status(500).end();
-                return ;
-            } else if (data) {
+        Movie.likeMovie(formdata)
+        .then(function (data) {
+            if (data) {
                 var returndata = {};
                 if (data.duplicate) {
                     returndata.info = '您已经评论过';
@@ -220,6 +224,10 @@ exports.like = function (req, res, next) {
             } else {
                 next();
             }
+        })
+        .catch(function (err) {
+            log.error(err);
+            res.status(500).end();
         });
     }
 };

@@ -10,12 +10,15 @@ $(function () {
         this.likeBtn = $('#like-movie');
         this.disLikeBtn = $('#dislike-movie');
         this.addCommentForm = $('#add-comment-form');
+        this._csrf = '';
     }
     // 给评论表单注入csrfToken
     Movie.prototype.initCommentForm = function () {
+        var that = this;
         $.get('/comment/'+this.movieid, function (res, status) {
             if (res.status) {
-                $('#add-comment-form input[name="_csrf"]').val(res.csrfToken);
+                // $('#add-comment-form input[name="_csrf"]').val(res.csrfToken);
+                that._csrf = res.csrfToken;
             }
         });
     };
@@ -33,14 +36,11 @@ $(function () {
     Movie.prototype.bindEvent = function () {
         var that = this;
          this.triggerComment.on('click', function () {
-            $.get('/judgeState', function (res) {
-                if (!res.loginState) {
-                    $('#login-modal').foundation('open');
-                    that.triggerComment.attr("data-toggle","comment-modal");
-                } else {
-                    that.triggerComment.attr("data-toggle","comment-modal");
-                }
-            });
+            if (!sessionStorage.getItem('name')) {
+                $('#login-modal').foundation('open');
+            } else {
+                that.triggerComment.attr("data-toggle","comment-modal");
+            }
          });
          
          // 发布活动监听是否登陆状态
@@ -80,7 +80,7 @@ $(function () {
                 title: $('#add-comment-form input[name="title"]').val(),
                 movieid: that.movieid,
                 detail: $('#add-comment-form textarea').val(),
-                _csrf: $('#add-comment-form input[name="_csrf"]').val()
+                _csrf: that._csrf
             };
 
             if (data.title == ""||data.detail=="") {
@@ -92,6 +92,7 @@ $(function () {
                     $('#comment-modal').foundation('close');
                     that.initCommentForm();
                     that.addCommentForm.children('input').val('');
+                    that.addCommentForm.children('textarea').val('');
 
                     that.commentList.children('h5').after(
                         '<li class="comment-item has-submenu is-accordion-submenu-parent" aria-haspopup="true">'+ 
@@ -140,19 +141,27 @@ $(function () {
         // 加载页面时判断是否登录状态
         var name = $('#storage-nickname').val()||$('#storage-name').val();
         var avator = $('#storage-avator').val();
-        if (name && avator && window.sessionStorage) {
-            sessionStorage.setItem('name', name);
-            sessionStorage.setItem('avator', avator);
-        }
+        $.get('/judgeState', function (res) {
+            if (res.loginState) {
+                if (name && avator && window.sessionStorage) {
+                    sessionStorage.setItem('name', name);
+                    sessionStorage.setItem('avator', avator);
+                }
+            } else {
+                sessionStorage.clear();
+            }
+        });
     };
     Movie.prototype.init = function () {
-        this.bindEvent();
         this.getActivity();
+        this.bindEvent();
         this.setLocalStorage();
         this.initCommentForm();
         this.initScrollBar();
     };
 
-    var moviePage = new Movie();
-    moviePage.init();
+    $(document).ready(function () {
+        var moviePage = new Movie();
+        moviePage.init();
+    })
 });

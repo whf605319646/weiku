@@ -43,6 +43,8 @@ $(function () {
     // 初始化laydate插件
     laydate({elem: '#pickdate'});
     
-    var mid =/\d+$/.exec(location.href)[0];
-    new AddActivity(mid).bindEvent();
+    $(document).ready(function () {
+        var mid =/\d+$/.exec(location.href)[0];
+        new AddActivity(mid).bindEvent();
+    });
 });

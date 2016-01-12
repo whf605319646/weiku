@@ -33,9 +33,10 @@ $(function(){
                         $('.login-tip').html('用户名或密码错误!')
                     }
                     else if(res.status) {
+                        $('#login-modal').foundation('close');
                         $('#login').off('click');
                         that.registerBtn.off('click');
-                        $('#login-modal').foundation('close');
+                        
                         $('#bar-login').replaceWith('<li><a href="/user/'+res.sessiondata.username
                             +'">'+res.sessiondata.username+'</a></li>');
                         $('#bar-register').replaceWith('<li><a href="" id="bar-logout">退出</a></li>');
@@ -54,12 +55,15 @@ $(function(){
 
         // 退出
         $('.top-bar-right').on('click','#bar-logout', function (e) {
-            $.post('/user/authenticate/logout',function (res) {
-                if (res.status) {
-                    sessionStorage.clear();
-                    location.reload();
-                }
-            });
+            
+            if (window.sessionStorage) {
+                window.sessionStorage.clear();
+                location.reload();
+            } else {
+                console.log('浏览器不支持，请使用Chrome浏览器')
+            }
+            // 先清除session再执行登录，为了兼容火狐和IE
+            $.post('/user/authenticate/logout');
         });
 
         // 注册
@@ -98,9 +102,9 @@ $(function(){
         });
 
         // 返回顶部
-        this.toTop.on('click', function (e) {
-            e.preventDefault();
-            document.body.scrollTop = 0;
+        this.toTop.on('click', function () {
+            // 这是一个坑，必须采用window滚动的方式才能兼容所有的浏览器
+            $(window).scrollTop(0);
         });
     };
 

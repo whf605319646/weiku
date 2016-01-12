@@ -17,7 +17,7 @@ var isAuthenticated = function (req, res, next) {
 }
 /* GET users listing. */
 router.get('/:uid', isAuthenticated, user.getUser);
-router.post('/',passport.authenticate('local',{failureFlash:true}), user.login);
+router.post('/',passport.authenticate('local',{failureFlash: 'Invalid username or password'}), user.login);
 
 router.post('/authenticate/logout', user.logout);
 router.post('/authenticate/register', user.addUser);

@@ -43,6 +43,7 @@ exports.login =  function (req, res, next) {
 
 exports.logout = function (req, res, next) {
     req.logout();
+    console.log(req.user)
     req.session.save(function (err) {
         if (err) {
             log.error(err);
@@ -84,16 +85,19 @@ exports.addUser = function (req, res, next) {
 // 更新用户信息文字资料
 exports.updateInfo = function (req, res, next) {
     User.findOne({username: req.user.username}, function (err, doc) {
-        if (doc) {
+        if (err) {
+            log.error(err);
+            return res.send({status: false, info: err})
+        } else if (doc) {
             doc.update(req.body, function (err, data) {
                 if (err) {
                     log.error(err);
-                    return next(err);
+                    return res.send({status: false, info: err})
                 }
                 res.send({status: true});
             });
         } else {
-            next();
+            res.send({status: false, info: '用户不存在'});
         }
     });
 };
